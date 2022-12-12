@@ -1,0 +1,15 @@
+.beyond-image-view .component-result {
+  display: grid;
+}
+.beyond-image-view .component-result figure {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.beyond-image-view .component-result figure img {
+  width: 100%;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9pbWFnZS92aWV3L3dpZGdldC9zY3NzL3Byb2plY3RcXG1vZHVsZXNcXGltYWdlXFx2aWV3XFx3aWRnZXRcXHNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNDO0VBQ0M7O0FBRUE7RUFDQztFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNDIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvIn0= */

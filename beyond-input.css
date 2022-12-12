@@ -1,0 +1,17 @@
+.component-result form {
+  width: 100%;
+}
+.component-result form .beyond-element-input {
+  width: 100%;
+}
+.component-result form .beyond-element-input input {
+  width: 100%;
+  color: var(--text-on-primary);
+}
+.component-result form .beyond-element-input:focus-within label,
+.component-result form .beyond-element-input input:not(:placeholder-shown) ~ label {
+  background-color: var(--surface);
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9mb3JtL3ZpZXdzL2lucHV0L3dpZGdldC9zY3NzL3Byb2plY3RcXG1vZHVsZXNcXGZvcm1cXHZpZXdzXFxpbnB1dFxcd2lkZ2V0XFxzY3NzXFxzdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQztFQUNDOztBQUVBO0VBQ0M7O0FBRUE7RUFDQztFQUNBOztBQUVEO0FBQUE7RUFFRSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyJ9 */

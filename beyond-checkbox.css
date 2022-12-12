@@ -1,0 +1,16 @@
+.results-form {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.results-form .beyond-checkbox span,
+.results-form .beyond-checkbox .inp-cbx:checked + .cbx span:last-child {
+  color: var(--text-on-secondary);
+}
+.results-form .beyond-checkbox .cbx {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9mb3JtL3ZpZXdzL2NoZWNrYm94L3dpZGdldC9zY3NzL3Byb2plY3RcXG1vZHVsZXNcXGZvcm1cXHZpZXdzXFxjaGVja2JveFxcd2lkZ2V0XFxzY3NzXFxzdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDO0VBQ0E7RUFDQTs7QUFHQztBQUFBO0VBRUM7O0FBR0Q7RUFDQztFQUNBIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvIn0= */

@@ -1,0 +1,16 @@
+.component-result form {
+  width: 100%;
+}
+.component-result form .beyond-element-textarea {
+  height: 6rem;
+  width: 300px;
+}
+.component-result form .beyond-element-textarea textarea {
+  height: 100%;
+  width: 100%;
+  color: var(--text-on-primary);
+  resize: none;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9mb3JtL3ZpZXdzL3RleHRhcmVhL3dpZGdldC9zY3NzL3Byb2plY3RcXG1vZHVsZXNcXGZvcm1cXHZpZXdzXFx0ZXh0YXJlYVxcd2lkZ2V0XFxzY3NzXFxzdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDSTtFQUNJOztBQUVBO0VBQ0k7RUFDQTs7QUFDQTtFQUNJO0VBQ0E7RUFDQTtFQUNBIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvIn0= */

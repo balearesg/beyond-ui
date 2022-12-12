@@ -1,0 +1,13 @@
+.component-result .beyond-element-empty {
+  background-color: var(--background);
+  border-radius: 8px;
+  max-width: 500px;
+}
+.component-result .beyond-element-empty svg.beyond-icon {
+  background-color: var(--border);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9lbXB0eS92aWV3L3dpZGdldC9zY3NzL3Byb2plY3RcXG1vZHVsZXNcXGVtcHR5XFx2aWV3XFx3aWRnZXRcXHNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0k7RUFDQTtFQUNBOztBQUNBO0VBQ0k7RUFDQTtFQUNBIiwiZmlsZSI6IiIsInNvdXJjZVJvb3QiOiIvIn0= */

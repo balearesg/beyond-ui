@@ -1,0 +1,192 @@
+button {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: transparent;
+}
+input,
+textarea {
+  color: var(--text-on-primary);
+}
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.beyond-element-toast {
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.beyond-element-toast:before, .beyond-element-toast:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 100px/10px;
+}
+.beyond-element-toast:after {
+  right: 10px;
+  left: auto;
+  transform: skew(8deg) rotate(3deg);
+}
+.beyond-element-toast-container {
+  position: fixed;
+  top: 60px;
+  right: 30px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 1rem;
+  row-gap: 1rem;
+  max-width: 25rem;
+}
+@media screen and (max-width: 450px) {
+  .beyond-element-toast-container {
+    right: 3px;
+  }
+}
+.beyond-element-toast-container .toast__container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.beyond-element-toast-container .add-margin {
+  margin-top: 20px;
+}
+.beyond-element-toast-container .toast__svg {
+  fill: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+}
+.beyond-element-toast-container .toast-content {
+  text-align: left;
+  padding: 21px 0;
+  background-color: #fff;
+  border-radius: var(--border-secondary);
+  max-width: 500px;
+  top: 0px;
+  position: relative;
+  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+  max-height: 8rem;
+  height: auto;
+}
+.beyond-element-toast-container .toast-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.beyond-element-toast-container .toast__icon {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  padding: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.beyond-element-toast-container .toast__type {
+  color: #3e3e3e;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.beyond-element-toast-container .toast__message {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #878787;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+.beyond-element-toast-container .toast__content {
+  padding-left: 70px;
+  padding-right: 60px;
+}
+.beyond-element-toast-container .toast__close {
+  position: absolute;
+  right: 22px;
+  top: -10px;
+  bottom: 0;
+  margin: auto 0;
+  width: 14px;
+  cursor: pointer;
+  height: 14px;
+  fill: #878787;
+}
+.beyond-element-toast-container .success .toast__icon {
+  background-color: #2bde3f;
+}
+.beyond-element-toast-container .success:before {
+  background-color: #2bde3f;
+}
+.beyond-element-toast-container .info .toast__icon {
+  background-color: #1d72f3;
+}
+.beyond-element-toast-container .info:before {
+  background-color: #1d72f3;
+}
+.beyond-element-toast-container .warning .toast__icon {
+  background-color: #ffc007;
+}
+.beyond-element-toast-container .warning:before {
+  background-color: #ffc007;
+}
+.beyond-element-toast-container .error .toast__icon {
+  background-color: var(--error);
+}
+.beyond-element-toast-container .error:before {
+  background-color: var(--error);
+}
+
+.beyond-element-toast-container.toast-content {
+  bottom: 60px;
+  top: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.view {
+  padding-bottom: 2rem;
+}
+.view .component-result {
+  padding: 24px 24px 0;
+  color: var(--text-on-primary);
+  row-gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.view .component-result h3 {
+  height: fit-content;
+  align-self: baseline;
+}
+.view .component-info {
+  padding: 24px 24px 0;
+  display: flex;
+  color: var(--text-on-primary);
+  flex-direction: column;
+  row-gap: 8px;
+}
+.view .component-info svg.beyond-icon {
+  fill: var(--text-on-primary);
+}
