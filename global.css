@@ -1,12 +1,229 @@
+.btn {
+  cursor: pointer;
+  width: auto;
+  min-height: 35px;
+  max-height: 35px;
+  transition: all 300ms ease-in;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0 15px;
+  display: inline-block;
+  text-transform: lowercase;
+  border: none;
+}
+.btn:not(:disabled) {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.btn:active:not(:disabled) {
+  transform: translateY(3px);
+}
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.btn.btn-primary {
+  background-color: var(--primary);
+  color: var(--text);
+}
+.btn.btn-primary:hover:not(:disabled) {
+  background-color: var(--primary-dark);
+}
+.btn.btn-primary-dark {
+  background-color: var(--primary-dark);
+  color: var(--text);
+}
+.btn.btn-primary-dark:hover:not(:disabled) {
+  background-color: var(--primary);
+}
+.btn.btn-border {
+  border: 1px solid var(--primary);
+  background-color: var(--gray-lighter);
+  color: var(--gray);
+}
+.btn.btn-border:hover:not(:disabled) {
+  background-color: var(--gray-lighter);
+}
+.btn.btn-cancel {
+  background-color: var(--gray-variant);
+  color: var(--text-on-secondary);
+}
+.btn.btn-cancel:hover:not(:disabled) {
+  background-color: var(--gray);
+}
+.btn:first-letter {
+  text-transform: uppercase;
+}
+@media screen and (max-width: 360px) {
+  .btn {
+    font-size: 12px;
+  }
+}
 button {
   background: transparent;
   border: 0;
   border-radius: 0;
   outline: transparent;
+  cursor: pointer;
+}
+
+.action-button {
+  background: var(--primary-accent);
+  color: var(--text-on-primary);
+  border-radius: 10px;
+  padding: 1rem 2rem;
 }
 input,
 textarea {
   color: var(--text-on-primary);
+}
+.beyond-alert-dialog.beyond-alert-dialog-centered .alert-dialog-content, .beyond-alert-dialog.beyond-alert-dialog-centered .actions {
+  display: grid;
+  justify-content: center;
+}
+.beyond-alert-dialog .actions {
+  border-top: 1px solid var(--gray-light);
+  margin-top: 15px;
+  display: grid;
+  justify-content: end;
+  padding: 15px 0 0;
+}
+.beyond-alert-dialog .actions .beyond-button {
+  margin: 0;
+}
+body.body-beyond-modal-opened {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px; /* Avoid width reflow */
+}
+
+.beyond-element-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.beyond-element-modal.show-modal {
+  display: block;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+}
+.beyond-element-modal .modal-wrapper {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+.beyond-element-modal .modal-content {
+  position: relative;
+  color: #000;
+  background: #FFF;
+  padding: 1.5rem;
+}
+.beyond-element-modal .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  display: inline-block;
+  fill: var(--gray);
+  color: var(--gray);
+  transition: all 100ms ease-in;
+  outline: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.beyond-element-modal .close-icon:hover, .beyond-element-modal .close-icon:focus {
+  fill: var(--gray-dark);
+  color: var(--gray);
+  transition: all 100ms ease-in;
+}
+.beyond-element-modal .close-icon svg {
+  height: 12px;
+  width: 13px;
+  fill: #000;
+}
+.beyond-confirm-dialog.beyond-confirm-dialog-centered {
+  justify-content: center;
+  text-align: center;
+}
+.beyond-confirm-dialog.beyond-confirm-dialog-centered .confirm-dialog-content,
+.beyond-confirm-dialog.beyond-confirm-dialog-centered .actions {
+  display: grid;
+  justify-content: center;
+}
+.beyond-confirm-dialog .actions {
+  border-top: 1px solid var(--gray-light);
+  padding: 15px 0 0;
+  margin-top: 15px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  justify-content: end;
+}
+.beyond-confirm-dialog .actions .beyond-button {
+  margin: 0;
+  min-width: 6rem;
+}
+.beyond-confirm-dialog.modal-confirm {
+  transform: none;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 14px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: var(--border-secondary);
+  display: flex;
+  flex-direction: row-reverse;
+}
+.beyond-confirm-dialog.modal-confirm .modal-content {
+  padding: 8px 0px 0 0;
+  max-width: 400px;
+}
+.beyond-confirm-dialog.modal-confirm .modal-content p {
+  margin: 0;
+  font-size: 15px;
+}
+.beyond-confirm-dialog.modal-confirm .modal-content summary {
+  font-size: 17px;
+  font-weight: 500;
+}
+.beyond-confirm-dialog.modal-confirm .close-modal {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: max-content;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.beyond-element-modal.md .modal-content {
+  width: 70%;
+}
+.beyond-element-modal.lg .modal-content {
+  width: 90%;
+}
+@media (max-width: 600px) {
+  .beyond-element-modal .modal-content, .beyond-element-modal.md .modal-content, .beyond-element-modal.lg .modal-content {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .beyond-element-modal.md {
+    min-width: 80%;
+  }
+  .beyond-element-modal.lg {
+    width: 90%;
+  }
 }
 * {
   font-family: var(--font-family);
@@ -178,7 +395,6 @@ textarea {
 }
 .view .component-result h3 {
   height: fit-content;
-  align-self: baseline;
 }
 .view .component-info {
   padding: 24px 24px 0;
@@ -188,5 +404,47 @@ textarea {
   row-gap: 8px;
 }
 .view .component-info svg.beyond-icon {
-  fill: var(--text-on-primary);
+  fill: var(--text-on-secondary);
+}
+.view .component-implementation {
+  display: flex;
+  align-items: flex-start;
+}
+.view .component-implementation .component-info {
+  padding: 24px 0 24px 24px;
+}
+.view .component-implementation .component-info, .view .component-implementation .component-result {
+  flex: 1 1 50%;
+}
+.view .component-implementation .component-result {
+  flex-direction: column;
+}
+.view .component-implementation .component-result h3 {
+  align-self: flex-start;
+}
+.view .component-implementation .component-detail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: 16px 0 0;
+}
+.view .component-implementation .component-detail p {
+  line-height: 1.5;
+}
+.view .component-implementation .component-detail code {
+  font-style: italic;
+  background-color: var(--secondary);
+  padding: 4px;
+}
+@media screen and (max-width: 1024px) {
+  .view .component-implementation {
+    flex-direction: column;
+  }
+  .view .component-implementation .component-info, .view .component-implementation .component-result {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .view .component-implementation .component-info {
+    padding: 24px 24px 0;
+  }
 }

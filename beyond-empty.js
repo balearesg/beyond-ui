@@ -79,7 +79,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       **************************************/
 
       ims.set('./views/implementation', {
-        hash: 358581706,
+        hash: 3985385810,
         creator: function (require, exports) {
           "use strict";
 
@@ -88,7 +88,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
           });
           exports.implementation = void 0;
           const implementation = `
-<BeyondEmpty text="No hay resultados para mostrar" />
+<BeyondEmpty text="No records to display" />
 `;
           exports.implementation = implementation;
         }
@@ -99,7 +99,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 45547137,
+        hash: 3203825519,
         creator: function (require, exports) {
           "use strict";
 
@@ -121,14 +121,16 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
               componentName: "Empty"
             }), React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Importacion: "), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondEmpty } from '@beyond/ui/empty';`)), React.createElement("div", {
+            }, React.createElement("h3", null, "Import: "), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondEmpty } from '@beyond/ui/empty';`)), React.createElement("div", {
+              className: 'component-implementation'
+            }, React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Implementacion: "), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation)), React.createElement("div", {
+            }, React.createElement("h3", null, "Implementation: "), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation)), React.createElement("div", {
               className: "component-result"
-            }, React.createElement("h3", null, "Resultado:"), React.createElement(_empty.BeyondEmpty, {
+            }, React.createElement("h3", null, "Result:"), React.createElement(_empty.BeyondEmpty, {
               icon: "info",
-              text: "No hay resultados para mostrar"
-            }))));
+              text: "No records to display"
+            })))));
           }
         }
       });
@@ -159,4 +161,4 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JNLE1BQU1DLGNBQWMsR0FBRzs7Q0FFN0I7VUFBQ0Q7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDRkY7VUFDQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBRU87VUFBVSxTQUNSRCxJQUFJO1lBQ1osT0FDQ0csb0JBQUNDLDJCQUFvQixRQUNwQkQ7Y0FBS0UsU0FBUyxFQUFDO1lBQU0sR0FDcEJGLG9CQUFDRyxjQUFNO2NBQUNDLGFBQWEsRUFBQztZQUFPLEVBQUcsRUFDaENKO2NBQUtFLFNBQVMsRUFBQztZQUFnQixHQUM5QkYsZ0RBQXNCLEVBQ3RCQSxvQkFBQ0ssOENBQXNCLFFBQUUsaURBQWlELENBQTBCLENBQy9GLEVBQ05MO2NBQUtFLFNBQVMsRUFBQztZQUFnQixHQUM5QkYsbURBQXlCLEVBQ3pCQSxvQkFBQ0ssOENBQXNCLFFBQUVOLDhCQUFjLENBQTBCLENBQzVELEVBRU5DO2NBQUtFLFNBQVMsRUFBQztZQUFrQixHQUNoQ0YsNkNBQW1CLEVBQ25CQSxvQkFBQ00sa0JBQVc7Y0FBQ0MsSUFBSSxFQUFDLE1BQU07Y0FBQ0MsSUFBSSxFQUFDO1lBQWdDLEVBQUcsQ0FDNUQsQ0FDRCxDQUNnQjtVQUV6QiIsIm5hbWVzIjpbIkNvbnRyb2xsZXIiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiV2lkZ2V0IiwiVmlldyIsImV4cG9ydHMiLCJpbXBsZW1lbnRhdGlvbiIsIlJlYWN0IiwiVG9hc3RDb250ZXh0UHJvdmlkZXIiLCJjbGFzc05hbWUiLCJIZWFkZXIiLCJjb21wb25lbnROYW1lIiwiQ29weWFibGVJbXBsZW1lbnRhdGlvbiIsIkJleW9uZEVtcHR5IiwiaWNvbiIsInRleHQiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9lbXB0eS92aWV3L3dpZGdldC90cy9jb250cm9sbGVyLnRzIiwicHJvamVjdC9tb2R1bGVzL2VtcHR5L3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL2ltcGxlbWVudGF0aW9uLnRzIiwicHJvamVjdC9tb2R1bGVzL2VtcHR5L3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JNLE1BQU1DLGNBQWMsR0FBRzs7Q0FFN0I7VUFBQ0Q7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDRkY7VUFDQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBRU87VUFBVSxTQUNSRCxJQUFJO1lBQ1osT0FDQ0csb0JBQUNDLDJCQUFvQixRQUNwQkQ7Y0FBS0UsU0FBUyxFQUFDO1lBQU0sR0FDcEJGLG9CQUFDRyxjQUFNO2NBQUNDLGFBQWEsRUFBQztZQUFPLEVBQUcsRUFDaENKO2NBQUtFLFNBQVMsRUFBQztZQUFnQixHQUM5QkYsMkNBQWlCLEVBQ2pCQSxvQkFBQ0ssOENBQXNCLFFBQUUsaURBQWlELENBQTBCLENBQy9GLEVBQ05MO2NBQUtFLFNBQVMsRUFBQztZQUEwQixHQUN6Q0Y7Y0FBS0UsU0FBUyxFQUFDO1lBQWdCLEdBQzlCRixtREFBeUIsRUFDekJBLG9CQUFDSyw4Q0FBc0IsUUFBRU4sOEJBQWMsQ0FBMEIsQ0FDNUQsRUFFTkM7Y0FBS0UsU0FBUyxFQUFDO1lBQWtCLEdBQ2hDRiwwQ0FBZ0IsRUFDaEJBLG9CQUFDTSxrQkFBVztjQUFDQyxJQUFJLEVBQUMsTUFBTTtjQUFDQyxJQUFJLEVBQUM7WUFBdUIsRUFBRyxDQUNuRCxDQUNBLENBRUQsQ0FDZ0I7VUFFekIiLCJuYW1lcyI6WyJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlZpZXciLCJleHBvcnRzIiwiaW1wbGVtZW50YXRpb24iLCJSZWFjdCIsIlRvYXN0Q29udGV4dFByb3ZpZGVyIiwiY2xhc3NOYW1lIiwiSGVhZGVyIiwiY29tcG9uZW50TmFtZSIsIkNvcHlhYmxlSW1wbGVtZW50YXRpb24iLCJCZXlvbmRFbXB0eSIsImljb24iLCJ0ZXh0Il0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJwcm9qZWN0L21vZHVsZXMvZW1wdHkvdmlldy93aWRnZXQvdHMvY29udHJvbGxlci50cyIsInByb2plY3QvbW9kdWxlcy9lbXB0eS92aWV3L3dpZGdldC90cy92aWV3cy9pbXBsZW1lbnRhdGlvbi50cyIsInByb2plY3QvbW9kdWxlcy9lbXB0eS92aWV3L3dpZGdldC90cy92aWV3cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbF19

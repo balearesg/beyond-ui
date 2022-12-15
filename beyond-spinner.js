@@ -79,7 +79,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 1405665156,
+        hash: 3274919428,
         creator: function (require, exports) {
           "use strict";
 
@@ -100,14 +100,16 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
               componentName: "Icons"
             }), React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Importaci\u00F3n:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondSpinner } from '@beyond/ui/spinner';`)), React.createElement("div", {
+            }, React.createElement("h3", null, "Import:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondSpinner } from '@beyond/ui/spinner';`)), React.createElement("div", {
+              className: 'component-implementation'
+            }, React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Implementaci\u00F3n:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `<BeyondSpinner color="#617096" className="spinner" />`)), React.createElement("div", {
+            }, React.createElement("h3", null, "Implementation:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `<BeyondSpinner color="#617096" className="spinner" />`)), React.createElement("div", {
               className: "component-result"
-            }, React.createElement("h3", null, "Resultado:"), React.createElement(_spinner.BeyondSpinner, {
+            }, React.createElement("h3", null, "Result:"), React.createElement(_spinner.BeyondSpinner, {
               color: "#617096",
               className: "spinner"
-            }))));
+            })))));
           }
         }
       });
@@ -138,4 +140,4 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JEO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFFTztVQUFVLFNBQ1JELElBQUk7WUFDWixPQUNDRSxvQkFBQ0MsMkJBQW9CLFFBQ3BCRDtjQUFLRSxTQUFTLEVBQUM7WUFBTSxHQUNwQkYsb0JBQUNHLGNBQU07Y0FBQ0MsYUFBYSxFQUFDO1lBQU8sRUFBRyxFQUNoQ0o7Y0FBS0UsU0FBUyxFQUFDO1lBQWdCLEdBQzlCRixvREFBcUIsRUFDckJBLG9CQUFDSyw4Q0FBc0IsUUFBRSxxREFBcUQsQ0FBMEIsQ0FDbkcsRUFDTkw7Y0FBS0UsU0FBUyxFQUFDO1lBQWdCLEdBQzlCRix1REFBd0IsRUFDeEJBLG9CQUFDSyw4Q0FBc0IsUUFBRSx1REFBdUQsQ0FBMEIsQ0FDckcsRUFDTkw7Y0FBS0UsU0FBUyxFQUFDO1lBQWtCLEdBQ2hDRiw2Q0FBbUIsRUFDbkJBLG9CQUFDTSxzQkFBYTtjQUFDQyxLQUFLLEVBQUMsU0FBUztjQUFDTCxTQUFTLEVBQUM7WUFBUyxFQUFHLENBQ2hELENBQ0QsQ0FDZ0I7VUFFekIiLCJuYW1lcyI6WyJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlZpZXciLCJleHBvcnRzIiwiUmVhY3QiLCJUb2FzdENvbnRleHRQcm92aWRlciIsImNsYXNzTmFtZSIsIkhlYWRlciIsImNvbXBvbmVudE5hbWUiLCJDb3B5YWJsZUltcGxlbWVudGF0aW9uIiwiQmV5b25kU3Bpbm5lciIsImNvbG9yIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJwcm9qZWN0L21vZHVsZXMvc3Bpbm5lci92aWV3L3dpZGdldC90cy9jb250cm9sbGVyLnRzIiwicHJvamVjdC9tb2R1bGVzL3NwaW5uZXIvdmlldy93aWRnZXQvdHMvdmlld3MvaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JEO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFFTztVQUFVLFNBQ1BELElBQUk7WUFDYixPQUNDRSxvQkFBQ0MsMkJBQW9CLFFBQ3BCRDtjQUFLRSxTQUFTLEVBQUM7WUFBTSxHQUNwQkYsb0JBQUNHLGNBQU07Y0FBQ0MsYUFBYSxFQUFDO1lBQU8sRUFBRyxFQUNoQ0o7Y0FBS0UsU0FBUyxFQUFDO1lBQWdCLEdBQzlCRiwwQ0FBZ0IsRUFDaEJBLG9CQUFDSyw4Q0FBc0IsUUFBRSxxREFBcUQsQ0FBMEIsQ0FDbkcsRUFDTkw7Y0FBS0UsU0FBUyxFQUFDO1lBQTBCLEdBQ3hDRjtjQUFLRSxTQUFTLEVBQUM7WUFBZ0IsR0FDOUJGLGtEQUF3QixFQUN4QkEsb0JBQUNLLDhDQUFzQixRQUFFLHVEQUF1RCxDQUEwQixDQUNyRyxFQUNOTDtjQUFLRSxTQUFTLEVBQUM7WUFBa0IsR0FDaENGLDBDQUFnQixFQUNoQkEsb0JBQUNNLHNCQUFhO2NBQUNDLEtBQUssRUFBQyxTQUFTO2NBQUNMLFNBQVMsRUFBQztZQUFTLEVBQUcsQ0FDaEQsQ0FDRCxDQUNELENBQ2dCO1VBRXpCIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJWaWV3IiwiZXhwb3J0cyIsIlJlYWN0IiwiVG9hc3RDb250ZXh0UHJvdmlkZXIiLCJjbGFzc05hbWUiLCJIZWFkZXIiLCJjb21wb25lbnROYW1lIiwiQ29weWFibGVJbXBsZW1lbnRhdGlvbiIsIkJleW9uZFNwaW5uZXIiLCJjb2xvciJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsicHJvamVjdC9tb2R1bGVzL3NwaW5uZXIvdmlldy93aWRnZXQvdHMvY29udHJvbGxlci50cyIsInByb2plY3QvbW9kdWxlcy9zcGlubmVyL3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF19

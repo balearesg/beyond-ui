@@ -39,7 +39,7 @@ System.register(["@beyond-js/kernel@0.1.2/bundle", "@beyond-js/kernel@0.1.2/tran
         "is": "page",
         "route": "/components/beyond-button"
       }, {
-        "name": "beyond-widget",
+        "name": "beyond-checkbox",
         "vspecifier": "@beyond/ui@1.0.0/beyond-checkbox",
         "is": "page",
         "route": "/components/beyond-checkbox"
@@ -83,10 +83,20 @@ System.register(["@beyond-js/kernel@0.1.2/bundle", "@beyond-js/kernel@0.1.2/tran
         "vspecifier": "@beyond/ui@1.0.0/layout/main",
         "is": "layout"
       }, {
-        "name": "beyond-modal",
-        "vspecifier": "@beyond/ui@1.0.0/beyond-modal",
+        "name": "beyond-alert-modal",
+        "vspecifier": "@beyond/ui@1.0.0/beyond-alert-modal",
         "is": "page",
-        "route": "/components/beyond-modals"
+        "route": "/components/beyond-alert-modal"
+      }, {
+        "name": "beyond-confirm-modal",
+        "vspecifier": "@beyond/ui@1.0.0/beyond-confirm-modal",
+        "is": "page",
+        "route": "/components/beyond-confirm-modal"
+      }, {
+        "name": "beyond-regular-modal",
+        "vspecifier": "@beyond/ui@1.0.0/beyond-regular-modal",
+        "is": "page",
+        "route": "/components/beyond-regular-modal"
       }, {
         "name": "beyond-scroll-container",
         "vspecifier": "@beyond/ui@1.0.0/beyond-scroll-container",

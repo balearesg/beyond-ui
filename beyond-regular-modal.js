@@ -1,7 +1,7 @@
-System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bundle", "@beyond-js/react-widgets@18.20.3/page", "react@18.2.0", "@beyond/ui@1.0.0/header", "@beyond/ui@1.0.0/toast", "@beyond/ui@1.0.0/copyable-implementation", "@beyond/ui@1.0.0/form", "@beyond-js/kernel@0.1.2/styles"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bundle", "@beyond-js/react-widgets@18.20.3/page", "react@18.2.0", "@beyond/ui@1.0.0/header", "@beyond/ui@1.0.0/toast", "@beyond/ui@1.0.0/copyable-implementation", "@beyond/ui@1.0.0/modal"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
   _export({
     Controller: void 0,
     View: void 0
@@ -21,10 +21,8 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       dependency_5 = _beyondUi100Toast;
     }, function (_beyondUi100CopyableImplementation) {
       dependency_6 = _beyondUi100CopyableImplementation;
-    }, function (_beyondUi100Form) {
-      dependency_7 = _beyondUi100Form;
-    }, function (_beyondJsKernel012Styles) {
-      dependency_8 = _beyondJsKernel012Styles;
+    }, function (_beyondUi100Modal) {
+      dependency_7 = _beyondUi100Modal;
     }],
     execute: function () {
       bimport = specifier => {
@@ -36,19 +34,18 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond/ui@1.0.0/beyond-textarea"
+          "vspecifier": "@beyond/ui@1.0.0/beyond-regular-modal"
         },
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-widgets/page', dependency_2], ['react', dependency_3], ['@beyond/ui/header', dependency_4], ['@beyond/ui/toast', dependency_5], ['@beyond/ui/copyable-implementation', dependency_6], ['@beyond/ui/form', dependency_7], ['@beyond-js/kernel/styles', dependency_8]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-widgets/page', dependency_2], ['react', dependency_3], ['@beyond/ui/header', dependency_4], ['@beyond/ui/toast', dependency_5], ['@beyond/ui/copyable-implementation', dependency_6], ['@beyond/ui/modal', dependency_7]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
-        "name": "beyond-textarea",
-        "vspecifier": "@beyond/ui@1.0.0/beyond-textarea",
+        "name": "beyond-regular-modal",
+        "vspecifier": "@beyond/ui@1.0.0/beyond-regular-modal",
         "is": "page",
-        "route": "/components/beyond-textarea"
+        "route": "/components/beyond-regular-modal"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@beyond/ui@1.0.0/beyond-textarea');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
@@ -79,7 +76,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       **************************************/
 
       ims.set('./views/implementation', {
-        hash: 792081462,
+        hash: 122166778,
         creator: function (require, exports) {
           "use strict";
 
@@ -88,23 +85,24 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
           });
           exports.implementation = void 0;
           const implementation = `
-export function TextareaImplementation() {
-	const [value, setValue] = React.useState('');
+export function Results() {
+	const [show, setShow] = React.useState(false);
 
-	function handleChange(event) {
-		const { value: textAreaValue } = event.target;
-		setValue(textAreaValue);
-	}
-
-	function handleSubmit(event) {
-		event.preventDefault();
-        // Logic...
+	function handleModal() {
+		setShow(!show);
 	}
 
 	return (
-		<form onSubmit={handleSubmit}>
-			<BeyondTextarea value={value} placeholder="Insert text..." onChange={handleChange} />
-		</form>
+		<>
+			<button className="action-button" onClick={handleModal}>
+				Display Modal!
+			</button>
+			{show && <BeyondModal show className="beauty-modal" onClose={handleModal}>
+				<div>
+					<p>This is a normal modal ❤</p>
+				</div>
+			</BeyondModal>}
+		</>
 	);
 }`;
           exports.implementation = implementation;
@@ -116,7 +114,7 @@ export function TextareaImplementation() {
       *****************************/
 
       ims.set('./views/index', {
-        hash: 3653753593,
+        hash: 2056069196,
         creator: function (require, exports) {
           "use strict";
 
@@ -135,10 +133,10 @@ export function TextareaImplementation() {
             return React.createElement(_toast.ToastContextProvider, null, React.createElement("div", {
               className: "view"
             }, React.createElement(_header.Header, {
-              componentName: "Textarea"
+              componentName: "Regular Modal"
             }), React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Import:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondTextarea } from '@beyond/ui/form';`)), React.createElement("div", {
+            }, React.createElement("h3", null, "Import:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondModal } from '@beyond/ui/modal';`)), React.createElement("div", {
               className: 'component-implementation'
             }, React.createElement("div", {
               className: "component-info"
@@ -154,7 +152,7 @@ export function TextareaImplementation() {
       *******************************/
 
       ims.set('./views/results', {
-        hash: 509335578,
+        hash: 2294434242,
         creator: function (require, exports) {
           "use strict";
 
@@ -163,27 +161,20 @@ export function TextareaImplementation() {
           });
           exports.Results = Results;
           var React = require("react");
-          var _form = require("@beyond/ui/form");
+          var _modal = require("@beyond/ui/modal");
           function Results() {
-            const [value, setValue] = React.useState('');
-            function handleChange(event) {
-              const {
-                value: textAreaValue
-              } = event.target;
-              setValue(textAreaValue);
+            const [show, setShow] = React.useState(false);
+            function handleModal() {
+              setShow(!show);
             }
-            function handleSubmit(event) {
-              event.preventDefault();
-              // Logic...
-            }
-
-            return React.createElement("form", {
-              onSubmit: handleSubmit
-            }, React.createElement(_form.BeyondTextarea, {
-              value: value,
-              placeholder: "Insert text...",
-              onChange: handleChange
-            }));
+            return React.createElement(React.Fragment, null, React.createElement("button", {
+              className: "action-button",
+              onClick: handleModal
+            }, "Display Modal!"), show && React.createElement(_modal.BeyondModal, {
+              show: true,
+              className: "beauty-modal",
+              onClose: handleModal
+            }, React.createElement("div", null, React.createElement("p", null, "This is a normal modal \u2764"))));
           }
         }
       });
@@ -214,4 +205,4 @@ export function TextareaImplementation() {
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JNLE1BQU1DLGNBQWMsR0FBRzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztFQW1CNUI7VUFBQ0Q7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDbkJIO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFDQTtVQUVPO1VBQVUsU0FDUkQsSUFBSTtZQUNaLE9BQ0NHLG9CQUFDQywyQkFBb0IsUUFDcEJEO2NBQUtFLFNBQVMsRUFBQztZQUFNLEdBQ3BCRixvQkFBQ0csY0FBTTtjQUFDQyxhQUFhLEVBQUM7WUFBVSxFQUFHLEVBQ25DSjtjQUFLRSxTQUFTLEVBQUM7WUFBZ0IsR0FDOUJGLDBDQUFnQixFQUNoQkEsb0JBQUNLLDhDQUFzQixRQUFFLG1EQUFtRCxDQUEwQixDQUNqRyxFQUNOTDtjQUFLRSxTQUFTLEVBQUM7WUFBMEIsR0FDeENGO2NBQUtFLFNBQVMsRUFBQztZQUFnQixHQUM5QkYsbURBQXlCLEVBQ3pCQSxvQkFBQ0ssOENBQXNCLFFBQUVOLDhCQUFjLENBQTBCLENBQzVELEVBRU5DO2NBQUtFLFNBQVMsRUFBQztZQUFrQixHQUNoQ0YsMENBQWdCLEVBQ2hCQSxvQkFBQ00sZ0JBQU8sT0FBRyxDQUNOLENBQ0QsQ0FDRCxDQUNnQjtVQUV6Qjs7Ozs7Ozs7Ozs7Ozs7Ozs7VUMvQkE7VUFDQTtVQUVNLFNBQVVBLE9BQU87WUFDdEIsTUFBTSxDQUFDQyxLQUFLLEVBQUVDLFFBQVEsQ0FBQyxHQUFHUixLQUFLLENBQUNTLFFBQVEsQ0FBQyxFQUFFLENBQUM7WUFFNUMsU0FBU0MsWUFBWSxDQUFDQyxLQUFLO2NBQzFCLE1BQU07Z0JBQUVKLEtBQUssRUFBRUs7Y0FBYSxDQUFFLEdBQUdELEtBQUssQ0FBQ0UsTUFBTTtjQUM3Q0wsUUFBUSxDQUFDSSxhQUFhLENBQUM7WUFDeEI7WUFFQSxTQUFTRSxZQUFZLENBQUNILEtBQUs7Y0FDMUJBLEtBQUssQ0FBQ0ksY0FBYyxFQUFFO2NBQ3RCO1lBQ0Q7O1lBRUEsT0FDQ2Y7Y0FBTWdCLFFBQVEsRUFBRUY7WUFBWSxHQUMzQmQsb0JBQUNpQixvQkFBYztjQUFDVixLQUFLLEVBQUVBLEtBQUs7Y0FBRVcsV0FBVyxFQUFDLGdCQUFnQjtjQUFDQyxRQUFRLEVBQUVUO1lBQVksRUFBSSxDQUMvRTtVQUVUIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJWaWV3IiwiZXhwb3J0cyIsImltcGxlbWVudGF0aW9uIiwiUmVhY3QiLCJUb2FzdENvbnRleHRQcm92aWRlciIsImNsYXNzTmFtZSIsIkhlYWRlciIsImNvbXBvbmVudE5hbWUiLCJDb3B5YWJsZUltcGxlbWVudGF0aW9uIiwiUmVzdWx0cyIsInZhbHVlIiwic2V0VmFsdWUiLCJ1c2VTdGF0ZSIsImhhbmRsZUNoYW5nZSIsImV2ZW50IiwidGV4dEFyZWFWYWx1ZSIsInRhcmdldCIsImhhbmRsZVN1Ym1pdCIsInByZXZlbnREZWZhdWx0Iiwib25TdWJtaXQiLCJCZXlvbmRUZXh0YXJlYSIsInBsYWNlaG9sZGVyIiwib25DaGFuZ2UiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9mb3JtL3ZpZXdzL3RleHRhcmVhL3dpZGdldC90cy9jb250cm9sbGVyLnRzIiwicHJvamVjdC9tb2R1bGVzL2Zvcm0vdmlld3MvdGV4dGFyZWEvd2lkZ2V0L3RzL3ZpZXdzL2ltcGxlbWVudGF0aW9uLnRzIiwicHJvamVjdC9tb2R1bGVzL2Zvcm0vdmlld3MvdGV4dGFyZWEvd2lkZ2V0L3RzL3ZpZXdzL2luZGV4LnRzeCIsInByb2plY3QvbW9kdWxlcy9mb3JtL3ZpZXdzL3RleHRhcmVhL3dpZGdldC90cy92aWV3cy9yZXN1bHRzLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGxdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JNLE1BQU1DLGNBQWMsR0FBRzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFvQjVCO1VBQUNEOzs7Ozs7Ozs7Ozs7Ozs7OztVQ3BCSDtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFFTztVQUFVLFNBQ1JELElBQUk7WUFDWixPQUNDRyxvQkFBQ0MsMkJBQW9CLFFBQ3BCRDtjQUFLRSxTQUFTLEVBQUM7WUFBTSxHQUNwQkYsb0JBQUNHLGNBQU07Y0FBQ0MsYUFBYSxFQUFDO1lBQWUsRUFBRyxFQUN4Q0o7Y0FBS0UsU0FBUyxFQUFDO1lBQWdCLEdBQzlCRiwwQ0FBZ0IsRUFDaEJBLG9CQUFDSyw4Q0FBc0IsUUFBRSxpREFBaUQsQ0FBMEIsQ0FDL0YsRUFDTkw7Y0FBS0UsU0FBUyxFQUFDO1lBQTBCLEdBQ3hDRjtjQUFLRSxTQUFTLEVBQUM7WUFBZ0IsR0FDOUJGLG1EQUF5QixFQUN6QkEsb0JBQUNLLDhDQUFzQixRQUFFTiw4QkFBYyxDQUEwQixDQUM1RCxFQUVOQztjQUFLRSxTQUFTLEVBQUM7WUFBa0IsR0FDaENGLDBDQUFnQixFQUNoQkEsb0JBQUNNLGdCQUFPLE9BQUcsQ0FDTixDQUNELENBQ0QsQ0FDZ0I7VUFFekI7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDL0JBO1VBQ0E7VUFFTSxTQUFVQSxPQUFPO1lBQ3RCLE1BQU0sQ0FBQ0MsSUFBSSxFQUFFQyxPQUFPLENBQUMsR0FBR1IsS0FBSyxDQUFDUyxRQUFRLENBQUMsS0FBSyxDQUFDO1lBRTdDLFNBQVNDLFdBQVc7Y0FDbkJGLE9BQU8sQ0FBQyxDQUFDRCxJQUFJLENBQUM7WUFDZjtZQUVBLE9BQ0NQLDBDQUNDQTtjQUFRRSxTQUFTLEVBQUMsZUFBZTtjQUFDUyxPQUFPLEVBQUVEO1lBQVcsb0JBRTdDLEVBQ1JILElBQUksSUFBSVAsb0JBQUNZLGtCQUFXO2NBQUNMLElBQUk7Y0FBQ0wsU0FBUyxFQUFDLGNBQWM7Y0FBQ1csT0FBTyxFQUFFSDtZQUFXLEdBQ3ZFVixpQ0FDQ0EsK0RBQStCLENBQzFCLENBQ08sQ0FDWjtVQUVMIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJWaWV3IiwiZXhwb3J0cyIsImltcGxlbWVudGF0aW9uIiwiUmVhY3QiLCJUb2FzdENvbnRleHRQcm92aWRlciIsImNsYXNzTmFtZSIsIkhlYWRlciIsImNvbXBvbmVudE5hbWUiLCJDb3B5YWJsZUltcGxlbWVudGF0aW9uIiwiUmVzdWx0cyIsInNob3ciLCJzZXRTaG93IiwidXNlU3RhdGUiLCJoYW5kbGVNb2RhbCIsIm9uQ2xpY2siLCJCZXlvbmRNb2RhbCIsIm9uQ2xvc2UiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9tb2RhbC92aWV3cy9yZWd1bGFyL3dpZGdldC90cy9jb250cm9sbGVyLnRzIiwicHJvamVjdC9tb2R1bGVzL21vZGFsL3ZpZXdzL3JlZ3VsYXIvd2lkZ2V0L3RzL3ZpZXdzL2ltcGxlbWVudGF0aW9uLnRzIiwicHJvamVjdC9tb2R1bGVzL21vZGFsL3ZpZXdzL3JlZ3VsYXIvd2lkZ2V0L3RzL3ZpZXdzL2luZGV4LnRzeCIsInByb2plY3QvbW9kdWxlcy9tb2RhbC92aWV3cy9yZWd1bGFyL3dpZGdldC90cy92aWV3cy9yZXN1bHRzLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGxdfQ==

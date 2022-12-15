@@ -79,7 +79,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       **************************************/
 
       ims.set('./views/implementation', {
-        hash: 2791807970,
+        hash: 2062646560,
         creator: function (require, exports) {
           "use strict";
 
@@ -89,33 +89,27 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
           exports.implementation = void 0;
           const implementation = `
 export function ImplementationPerfectScroll() {
-   
-    return (
-      <BeyondScrollContainer
-        className="aside"
-        data-perfect-scrollbar=""
-        data-suppress-scroll-x="true"
-      >
-        <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis veniam. Facere modi, quae reiciendis voluptatum vitae eveniet dolore soluta reprehenderit fugit consequuntur. Excepturi nesciunt tempore vero, totam culpa earum!
-        Quae sint provident officiis impedit adipisci tempora dolorum, quod unde voluptas iste ut sunt, ipsa, voluptatibus dolor laboriosam perferendis aspernatur eaque? Id architecto delectus perspiciatis suscipit itaque alias dolores quas.
-        Debitis, nesciunt temporibus eius amet dolorem quam consequatur quaerat accusamus! Rerum et voluptates, nulla vel similique, dolores dolore, corrupti reiciendis facilis hic esse laudantium illo. Dolor, doloremque praesentium? Provident, qui!
-        Distinctio pariatur a sequi omnis soluta est earum dicta incidunt commodi, perspiciatis nostrum unde at quas corrupti aliquam cumque, beatae quidem, repellat libero iusto iure qui quod eum. Dolor, minus?
-        Excepturi ut est modi laboriosam aperiam dolor maxime! Aperiam praesentium asperiores corporis mollitia ad a, eos dolor iusto repudiandae odit dolorem optio atque error in ducimus perspiciatis fugit cumque molestias.
-        Expedita ab sapiente exercitationem fugiat distinctio suscipit similique velit tempore corporis repellat consectetur, ullam a molestiae voluptatum? Alias, molestias odit! Inventore reprehenderit architecto, atque repudiandae incidunt modi officia vitae nisi.
-        Consectetur ut illum consequatur vero enim ad fugit ab omnis velit, minima voluptates. Nihil libero qui ducimus, accusantium optio eum temporibus quidem distinctio voluptas dolor modi alias provident minus repellat!
-        Eligendi consequuntur maxime rerum. Aspernatur voluptatibus nulla illum debitis itaque eius placeat praesentium consectetur velit numquam. Nam fugit, qui excepturi quidem consectetur, reiciendis eos eius dicta facilis, doloribus totam laudantium!
-        Reiciendis iusto porro ab quis amet! Eius velit a ut. Nihil fugit amet cumque a blanditiis, quas inventore tempore provident cupiditate ex consequatur! Reiciendis reprehenderit aut recusandae repudiandae sed provident?
-        Voluptatem quaerat error nobis illo nostrum inventore saepe hic adipisci doloribus omnis quibusdam quia tenetur blanditiis sint pariatur repellendus nemo minus amet consequuntur natus, quasi, tempore placeat! Aut, maiores fuga.
-        </div>
-        <div className="ps__rail-x">
-          <div className="ps__thumb-x" tabIndex={0} />
-        </div>
-        <div className="ps__rail-y">
-          <div className=" ps__thumb-y" tabIndex={0} />
-        </div>
-      </BeyondScrollContainer>
-    );
+  const text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis veniam.';
+	const output = [];
+	for (var i = 0; i < 300; i++) {
+		output.push(text)
+	  }
+	return (
+		<BeyondScrollContainer
+			className="aside"
+			data-perfect-scrollbar=""
+			data-suppress-scroll-x="true"
+		>
+			<div>
+				{output.join('')}
+			</div>
+			<div className="ps__rail-x">
+				<div className="ps__thumb-x" tabIndex={0} />
+			</div>
+			<div className="ps__rail-y">
+				<div className=" ps__thumb-y" tabIndex={0} />
+			</div>
+		</BeyondScrollContainer>
   }
 `;
           exports.implementation = implementation;
@@ -127,7 +121,7 @@ export function ImplementationPerfectScroll() {
       *****************************/
 
       ims.set('./views/index', {
-        hash: 3623972991,
+        hash: 141068747,
         creator: function (require, exports) {
           "use strict";
 
@@ -149,11 +143,13 @@ export function ImplementationPerfectScroll() {
               componentName: "Perfect Scroll"
             }), React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Importacion: "), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondScrollContainer } from "@beyond/ui/perfect-scrollbar";`)), React.createElement("div", {
+            }, React.createElement("h3", null, "Import: "), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondScrollContainer } from "@beyond/ui/perfect-scrollbar";`)), React.createElement("div", {
+              className: 'component-implementation'
+            }, React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Implementacion: "), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation)), React.createElement("div", {
+            }, React.createElement("h3", null, "Implementation: "), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation)), React.createElement("div", {
               className: "component-result"
-            }, React.createElement("h3", null, "Resultado:"), React.createElement(_results.Results, null))));
+            }, React.createElement("h3", null, "Result:"), React.createElement(_results.Results, null)))));
           }
         }
       });
@@ -163,7 +159,7 @@ export function ImplementationPerfectScroll() {
       *******************************/
 
       ims.set('./views/results', {
-        hash: 3441795834,
+        hash: 1836106214,
         creator: function (require, exports) {
           "use strict";
 
@@ -174,11 +170,16 @@ export function ImplementationPerfectScroll() {
           var React = require("react");
           var _perfectScrollbar = require("@beyond/ui/perfect-scrollbar");
           function Results() {
+            const text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis veniam.';
+            const output = [];
+            for (var i = 0; i < 300; i++) {
+              output.push(text);
+            }
             return React.createElement(_perfectScrollbar.BeyondScrollContainer, {
               className: "aside",
               "data-perfect-scrollbar": "",
               "data-suppress-scroll-x": "true"
-            }, React.createElement("div", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis veniam. Facere modi, quae reiciendis voluptatum vitae eveniet dolore soluta reprehenderit fugit consequuntur. Excepturi nesciunt tempore vero, totam culpa earum! Quae sint provident officiis impedit adipisci tempora dolorum, quod unde voluptas iste ut sunt, ipsa, voluptatibus dolor laboriosam perferendis aspernatur eaque? Id architecto delectus perspiciatis suscipit itaque alias dolores quas. Debitis, nesciunt temporibus eius amet dolorem quam consequatur quaerat accusamus! Rerum et voluptates, nulla vel similique, dolores dolore, corrupti reiciendis facilis hic esse laudantium illo. Dolor, doloremque praesentium? Provident, qui! Distinctio pariatur a sequi omnis soluta est earum dicta incidunt commodi, perspiciatis nostrum unde at quas corrupti aliquam cumque, beatae quidem, repellat libero iusto iure qui quod eum. Dolor, minus? Excepturi ut est modi laboriosam aperiam dolor maxime! Aperiam praesentium asperiores corporis mollitia ad a, eos dolor iusto repudiandae odit dolorem optio atque error in ducimus perspiciatis fugit cumque molestias. Expedita ab sapiente exercitationem fugiat distinctio suscipit similique velit tempore corporis repellat consectetur, ullam a molestiae voluptatum? Alias, molestias odit! Inventore reprehenderit architecto, atque repudiandae incidunt modi officia vitae nisi. Consectetur ut illum consequatur vero enim ad fugit ab omnis velit, minima voluptates. Nihil libero qui ducimus, accusantium optio eum temporibus quidem distinctio voluptas dolor modi alias provident minus repellat! Eligendi consequuntur maxime rerum. Aspernatur voluptatibus nulla illum debitis itaque eius placeat praesentium consectetur velit numquam. Nam fugit, qui excepturi quidem consectetur, reiciendis eos eius dicta facilis, doloribus totam laudantium! Reiciendis iusto porro ab quis amet! Eius velit a ut. Nihil fugit amet cumque a blanditiis, quas inventore tempore provident cupiditate ex consequatur! Reiciendis reprehenderit aut recusandae repudiandae sed provident? Voluptatem quaerat error nobis illo nostrum inventore saepe hic adipisci doloribus omnis quibusdam quia tenetur blanditiis sint pariatur repellendus nemo minus amet consequuntur natus, quasi, tempore placeat! Aut, maiores fuga."), React.createElement("div", {
+            }, React.createElement("div", null, output.join('')), React.createElement("div", {
               className: "ps__rail-x"
             }, React.createElement("div", {
               className: "ps__thumb-x",
@@ -219,4 +220,4 @@ export function ImplementationPerfectScroll() {
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JNLE1BQU1DLGNBQWMsR0FBRzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBOEI3QjtVQUFDRDs7Ozs7Ozs7Ozs7Ozs7Ozs7VUM5QkY7VUFDQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBRU87VUFBVSxTQUNSRCxJQUFJO1lBQ1osT0FDQ0csb0JBQUNDLDJCQUFvQixRQUNwQkQ7Y0FBS0UsU0FBUyxFQUFDO1lBQXdCLEdBQ3RDRixvQkFBQ0csY0FBTTtjQUFDQyxhQUFhLEVBQUM7WUFBZ0IsRUFBRyxFQUN6Q0o7Y0FBS0UsU0FBUyxFQUFDO1lBQWdCLEdBQzlCRixnREFBc0IsRUFDdEJBLG9CQUFDSyw4Q0FBc0IsUUFBRSx1RUFBdUUsQ0FBMEIsQ0FDckgsRUFDTkw7Y0FBS0UsU0FBUyxFQUFDO1lBQWdCLEdBQzlCRixtREFBeUIsRUFDekJBLG9CQUFDSyw4Q0FBc0IsUUFBRU4sOEJBQWMsQ0FBMEIsQ0FDNUQsRUFFTkM7Y0FBS0UsU0FBUyxFQUFDO1lBQWtCLEdBQ2hDRiw2Q0FBbUIsRUFDbkJBLG9CQUFDTSxnQkFBTyxPQUFHLENBQ04sQ0FDRCxDQUNnQjtVQUV6Qjs7Ozs7Ozs7Ozs7Ozs7Ozs7VUM3QkE7VUFDQTtVQUVNLFNBQVVBLE9BQU87WUFDdEIsT0FDQ04sb0JBQUNPLHVDQUFxQjtjQUNyQkwsU0FBUyxFQUFDLE9BQU87Y0FBQSwwQkFDTSxFQUFFO2NBQUEsMEJBQ0Y7WUFBTSxHQUU3QkYsaXlFQVdNLEVBQ05BO2NBQUtFLFNBQVMsRUFBQztZQUFZLEdBQzFCRjtjQUFLRSxTQUFTLEVBQUMsYUFBYTtjQUFDTSxRQUFRLEVBQUU7WUFBQyxFQUFJLENBQ3ZDLEVBQ05SO2NBQUtFLFNBQVMsRUFBQztZQUFZLEdBQzFCRjtjQUFLRSxTQUFTLEVBQUMsY0FBYztjQUFDTSxRQUFRLEVBQUU7WUFBQyxFQUFJLENBQ3hDLENBQ2lCO1VBRTFCIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJWaWV3IiwiZXhwb3J0cyIsImltcGxlbWVudGF0aW9uIiwiUmVhY3QiLCJUb2FzdENvbnRleHRQcm92aWRlciIsImNsYXNzTmFtZSIsIkhlYWRlciIsImNvbXBvbmVudE5hbWUiLCJDb3B5YWJsZUltcGxlbWVudGF0aW9uIiwiUmVzdWx0cyIsIkJleW9uZFNjcm9sbENvbnRhaW5lciIsInRhYkluZGV4Il0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJwcm9qZWN0L21vZHVsZXMvcGVyZmVjdC1zY3JvbGxiYXIvdmlldy93aWRnZXQvdHMvY29udHJvbGxlci50cyIsInByb2plY3QvbW9kdWxlcy9wZXJmZWN0LXNjcm9sbGJhci92aWV3L3dpZGdldC90cy92aWV3cy9pbXBsZW1lbnRhdGlvbi50cyIsInByb2plY3QvbW9kdWxlcy9wZXJmZWN0LXNjcm9sbGJhci92aWV3L3dpZGdldC90cy92aWV3cy9pbmRleC50c3giLCJwcm9qZWN0L21vZHVsZXMvcGVyZmVjdC1zY3JvbGxiYXIvdmlldy93aWRnZXQvdHMvdmlld3MvcmVzdWx0cy50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQzlDLElBQUlDLE1BQU07Y0FDTixPQUFPQyxXQUFJO1lBQ2Y7O1VBQ0hDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JNLE1BQU1DLGNBQWMsR0FBRzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBd0I3QjtVQUFDRDs7Ozs7Ozs7Ozs7Ozs7Ozs7VUN4QkY7VUFDQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBRU87VUFBVSxTQUNQRCxJQUFJO1lBQ2IsT0FDQ0csb0JBQUNDLDJCQUFvQixRQUNwQkQ7Y0FBS0UsU0FBUyxFQUFDO1lBQXdCLEdBQ3RDRixvQkFBQ0csY0FBTTtjQUFDQyxhQUFhLEVBQUM7WUFBZ0IsRUFBRyxFQUN6Q0o7Y0FBS0UsU0FBUyxFQUFDO1lBQWdCLEdBQzlCRiwyQ0FBaUIsRUFDakJBLG9CQUFDSyw4Q0FBc0IsUUFBRSx1RUFBdUUsQ0FBMEIsQ0FDckgsRUFDTkw7Y0FBS0UsU0FBUyxFQUFDO1lBQTBCLEdBQ3hDRjtjQUFLRSxTQUFTLEVBQUM7WUFBZ0IsR0FDOUJGLG1EQUF5QixFQUN6QkEsb0JBQUNLLDhDQUFzQixRQUFFTiw4QkFBYyxDQUEwQixDQUM1RCxFQUVOQztjQUFLRSxTQUFTLEVBQUM7WUFBa0IsR0FDaENGLDBDQUFnQixFQUNoQkEsb0JBQUNNLGdCQUFPLE9BQUcsQ0FDTixDQUNELENBRUQsQ0FDZ0I7VUFFekI7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDaENBO1VBQ0E7VUFFTSxTQUFVQSxPQUFPO1lBQ3RCLE1BQU1DLElBQUksR0FBRyxtRkFBbUY7WUFDaEcsTUFBTUMsTUFBTSxHQUFHLEVBQUU7WUFDakIsS0FBSyxJQUFJQyxDQUFDLEdBQUcsQ0FBQyxFQUFFQSxDQUFDLEdBQUcsR0FBRyxFQUFFQSxDQUFDLEVBQUUsRUFBRTtjQUM3QkQsTUFBTSxDQUFDRSxJQUFJLENBQUNILElBQUksQ0FBQzs7WUFFbEIsT0FDQ1Asb0JBQUNXLHVDQUFxQjtjQUNyQlQsU0FBUyxFQUFDLE9BQU87Y0FBQSwwQkFDTSxFQUFFO2NBQUEsMEJBQ0Y7WUFBTSxHQUU3QkYsaUNBQ0VRLE1BQU0sQ0FBQ0ksSUFBSSxDQUFDLEVBQUUsQ0FBQyxDQUNYLEVBQ05aO2NBQUtFLFNBQVMsRUFBQztZQUFZLEdBQzFCRjtjQUFLRSxTQUFTLEVBQUMsYUFBYTtjQUFDVyxRQUFRLEVBQUU7WUFBQyxFQUFJLENBQ3ZDLEVBQ05iO2NBQUtFLFNBQVMsRUFBQztZQUFZLEdBQzFCRjtjQUFLRSxTQUFTLEVBQUMsY0FBYztjQUFDVyxRQUFRLEVBQUU7WUFBQyxFQUFJLENBQ3hDLENBQ2lCO1VBRTFCIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJWaWV3IiwiZXhwb3J0cyIsImltcGxlbWVudGF0aW9uIiwiUmVhY3QiLCJUb2FzdENvbnRleHRQcm92aWRlciIsImNsYXNzTmFtZSIsIkhlYWRlciIsImNvbXBvbmVudE5hbWUiLCJDb3B5YWJsZUltcGxlbWVudGF0aW9uIiwiUmVzdWx0cyIsInRleHQiLCJvdXRwdXQiLCJpIiwicHVzaCIsIkJleW9uZFNjcm9sbENvbnRhaW5lciIsImpvaW4iLCJ0YWJJbmRleCJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsicHJvamVjdC9tb2R1bGVzL3BlcmZlY3Qtc2Nyb2xsYmFyL3ZpZXcvd2lkZ2V0L3RzL2NvbnRyb2xsZXIudHMiLCJwcm9qZWN0L21vZHVsZXMvcGVyZmVjdC1zY3JvbGxiYXIvdmlldy93aWRnZXQvdHMvdmlld3MvaW1wbGVtZW50YXRpb24udHMiLCJwcm9qZWN0L21vZHVsZXMvcGVyZmVjdC1zY3JvbGxiYXIvdmlldy93aWRnZXQvdHMvdmlld3MvaW5kZXgudHN4IiwicHJvamVjdC9tb2R1bGVzL3BlcmZlY3Qtc2Nyb2xsYmFyL3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL3Jlc3VsdHMudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbF19

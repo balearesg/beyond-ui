@@ -73,7 +73,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 2904960463,
+        hash: 2580129358,
         creator: function (require, exports) {
           "use strict";
 
@@ -89,7 +89,13 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
               className: "view"
             }, React.createElement(_header.Header, {
               componentName: "Getting started"
-            }), React.createElement("p", null, "Beyond UI is a collection of reusable components here you can see what they are and how to import and implement them. "));
+            }), React.createElement("div", {
+              className: "information"
+            }, React.createElement("div", {
+              className: "title"
+            }, React.createElement("h3", null, "BEYOND ", React.createElement("span", {
+              className: "ui"
+            }, "UI"), " | Useful and reusable components")), React.createElement("p", null, "Beyond UI is a collection of reusable components here you can see what they are and how to import and implement them. "), React.createElement("p", null, "It provides a set of useful and highly customizable components to be used in your projects! ")));
           }
         }
       });
@@ -120,4 +126,4 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQ2pELElBQUlDLE1BQU07Y0FDVCxPQUFPQyxXQUFJO1lBQ1o7O1VBQ0FDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JEO1VBQ0E7VUFFTztVQUFVLFNBQ1JELElBQUk7WUFDWixPQUNDRTtjQUFLQyxTQUFTLEVBQUM7WUFBTSxHQUNwQkQsb0JBQUNFLGNBQU07Y0FBQ0MsYUFBYSxFQUFDO1lBQWlCLEVBQUcsRUFDMUNILHdKQUE2SCxDQUN4SDtVQUVSIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJQYWdlIiwiZXhwb3J0cyIsIlJlYWN0IiwiY2xhc3NOYW1lIiwiSGVhZGVyIiwiY29tcG9uZW50TmFtZSJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsicHJvamVjdC9tb2R1bGVzL2hvbWUvdHMvY29udHJvbGxlci50cyIsInByb2plY3QvbW9kdWxlcy9ob21lL3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQ2pELElBQUlDLE1BQU07Y0FDVCxPQUFPQyxXQUFJO1lBQ1o7O1VBQ0FDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JEO1VBQ0E7VUFFTztVQUFVLFNBQ1JELElBQUk7WUFDWixPQUNDRTtjQUFLQyxTQUFTLEVBQUM7WUFBTSxHQUNwQkQsb0JBQUNFLGNBQU07Y0FBQ0MsYUFBYSxFQUFDO1lBQWlCLEVBQUcsRUFDMUNIO2NBQUtDLFNBQVMsRUFBQztZQUFhLEdBQzNCRDtjQUFLQyxTQUFTLEVBQUM7WUFBTyxHQUNyQkQsMkNBQ1FBO2NBQU1DLFNBQVMsRUFBQztZQUFJLFFBQVUsc0NBQ2pDLENBQ0EsRUFDTkQsd0pBQTZILEVBQzdIQSw4SEFBbUcsQ0FDOUYsQ0FDRDtVQUVSIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJQYWdlIiwiZXhwb3J0cyIsIlJlYWN0IiwiY2xhc3NOYW1lIiwiSGVhZGVyIiwiY29tcG9uZW50TmFtZSJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsicHJvamVjdC9tb2R1bGVzL2hvbWUvdHMvY29udHJvbGxlci50cyIsInByb2plY3QvbW9kdWxlcy9ob21lL3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF19

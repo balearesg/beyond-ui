@@ -1,9 +1,20 @@
-.view p {
-  padding: 24px 24px 0;
+.view .information {
+  padding: 1rem 2rem;
+}
+.view .information .title {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  color: var(--text-on-primary);
+}
+.view .information .title h3 .ui {
+  color: var(--primary);
+}
+.view .information p {
+  font-size: 1.5rem;
   color: var(--text-on-primary);
   line-height: 1.5;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9ob21lL3Nhc3MvcHJvamVjdFxcbW9kdWxlc1xcaG9tZVxcc2Fzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9ob21lL3Nhc3MvcHJvamVjdFxcbW9kdWxlc1xcaG9tZVxcc2Fzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0M7RUFDQzs7QUFFQTtFQUNDO0VBQ0E7RUFDQTs7QUFHQztFQUNDOztBQUtIO0VBQ0M7RUFDQTtFQUNBO0VBQ0EiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8ifQ== */

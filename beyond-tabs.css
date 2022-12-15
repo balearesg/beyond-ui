@@ -1,0 +1,58 @@
+.beyond-tabs .beyond-tabs-items {
+  background-color: transparent;
+}
+.beyond-tabs .beyond-tabs-items .tabs-container {
+  width: inherit;
+}
+.beyond-tabs .beyond-tabs-items .tabs-container .beyond-tab {
+  padding: 0;
+}
+.beyond-tabs .beyond-tabs-items .tabs-container .beyond-tab button {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  height: 47px;
+  padding: 0 2rem;
+  background-color: var(--primary);
+  color: var(--text-on-primary);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.beyond-tabs .beyond-tabs-items .tabs-container .beyond-tab button:disabled {
+  cursor: not-allowed;
+}
+.beyond-tabs .beyond-tabs-items .tabs-container .beyond-tab button.first-button {
+  border-radius: 8px 0px 0px 8px;
+}
+.beyond-tabs .beyond-tabs-items .tabs-container .beyond-tab button.last-button {
+  border-radius: 0 8px 8px 0;
+}
+.beyond-tabs .beyond-tabs-items .tabs-container .beyond-tab.tab-active button,
+.beyond-tabs .beyond-tabs-items .tabs-container .beyond-tab button:not(:disabled):hover {
+  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  background-color: var(--primary-dark);
+}
+.beyond-tabs .beyond-tabs-items .tabs-container .beyond-tab.tab-active::after {
+  width: 100%;
+  border-bottom: 1px solid var(--primary);
+}
+.beyond-tabs .beyond-tabs-content div {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.beyond-tabs .beyond-tabs-content div p {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: max-content;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy90YWJzL3ZpZXcvd2lkZ2V0L3Njc3MvcHJvamVjdFxcbW9kdWxlc1xcdGFic1xcdmlld1xcd2lkZ2V0XFxzY3NzXFxzdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDSTtFQUNFOztBQUVBO0VBQ0U7O0FBRUE7RUFDRTs7QUFDQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUNBO0VBQ0U7O0FBRUY7RUFDRTs7QUFFRjtFQUNFOztBQUlKO0FBQUE7RUFFRTtFQUNBOztBQUVGO0VBQ0U7RUFDQTs7QUFPSjtFQUNJO0VBQ0E7RUFDQTs7QUFDQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyJ9 */

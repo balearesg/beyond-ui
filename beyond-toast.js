@@ -14,8 +14,8 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       dependency_1 = _beyondJsKernel012Bundle;
     }, function (_beyondJsReactWidgets18203Page) {
       dependency_2 = _beyondJsReactWidgets18203Page;
-    }, function (_react2) {
-      dependency_3 = _react2;
+    }, function (_react) {
+      dependency_3 = _react;
     }, function (_beyondUi100Toast) {
       dependency_4 = _beyondUi100Toast;
     }, function (_beyondUi100Header) {
@@ -77,7 +77,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       **************************************/
 
       ims.set('./views/implementation', {
-        hash: 198593030,
+        hash: 3474409886,
         creator: function (require, exports) {
           "use strict";
 
@@ -91,7 +91,7 @@ export function ImplementationToast() {
     function toggleToast() {
         add({
             type: "info",
-            message: "Nombre copiado",
+            message: "Name copied",
         });
     }
     return (
@@ -138,32 +138,12 @@ export function View() {
         }
       });
 
-      /******************************
-      INTERNAL MODULE: ./views/result
-      ******************************/
-
-      ims.set('./views/result', {
-        hash: 1735993249,
-        creator: function (require, exports) {
-          "use strict";
-
-          Object.defineProperty(exports, "__esModule", {
-            value: true
-          });
-          exports.Result = Result;
-          var _react = require("react");
-          function Result() {
-            return _react.default.createElement("div", null, "result");
-          }
-        }
-      });
-
       /****************************
       INTERNAL MODULE: ./views/view
       ****************************/
 
       ims.set('./views/view', {
-        hash: 2923596923,
+        hash: 524028437,
         creator: function (require, exports) {
           "use strict";
 
@@ -194,14 +174,16 @@ export function View() {
               componentName: "Toast"
             }), React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Importaci\u00F3n:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { ToastContextProvider } from '@beyond/ui/toast';`), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { useToastContext } from '@beyond/ui/toast';`)), React.createElement("div", {
+            }, React.createElement("h3", null, "Import:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { ToastContextProvider } from '@beyond/ui/toast';`), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { useToastContext } from '@beyond/ui/toast';`)), React.createElement("div", {
+              className: 'component-implementation'
+            }, React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Implementaci\u00F3n:"), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation2)), React.createElement("div", {
+            }, React.createElement("h3", null, "Implementation:"), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation2)), React.createElement("div", {
               className: "component-result"
-            }, React.createElement("h3", null, "Resultado:"), React.createElement(_form.BeyondButton, {
+            }, React.createElement("h3", null, "Result:"), React.createElement(_form.BeyondButton, {
               className: "btn btn-primary",
               onClick: toggleToast
-            }, "Show Toast"))));
+            }, "Show Toast")))));
           }
         }
       });
@@ -237,4 +219,4 @@ export function View() {
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQUNBO1VBRU87VUFBVSxNQUNYQSxVQUFXLFNBQVFDLCtCQUF5QjtZQUM5QyxJQUFJQyxNQUFNO2NBQ04sT0FBT0MsV0FBSTtZQUNmOztVQUNIQzs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNSTSxNQUFNQyxjQUFjLEdBQUc7Ozs7Ozs7Ozs7Ozs7Q0FhN0I7VUFBQ0Q7VUFFSyxNQUFNRSxlQUFlLEdBQUc7Ozs7Ozs7Ozs7Q0FVOUI7VUFBQ0Y7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDekJGO1VBQ0E7VUFDQTtVQUNPO1VBQVUsU0FDUEQsSUFBSTtZQUNiLE9BQ0NJLG9CQUFDQywyQkFBb0IsUUFDcEJELG9CQUFDRSxVQUFJLE9BQUcsQ0FDYztVQUV6Qjs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNWQTtVQUVNLFNBQVVDLE1BQU07WUFDcEIsT0FDRUgsbURBQWlCO1VBRXJCOzs7Ozs7Ozs7Ozs7Ozs7OztVQ05BO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFDQTtVQUNPO1VBQVUsU0FDSkUsSUFBSTtZQUNiLE1BQU07Y0FBRUU7WUFBRyxDQUFFLEdBQUcsMEJBQWUsR0FBRTtZQUNqQyxTQUFTQyxXQUFXO2NBQ2hCRCxHQUFHLENBQUM7Z0JBQ0FFLElBQUksRUFBRSxNQUFNO2dCQUNaQyxPQUFPLEVBQUU7ZUFDWixDQUFDO1lBQ047WUFFQSxPQUNJUCxpQ0FDSUE7Y0FBS1EsU0FBUyxFQUFDO1lBQU0sR0FDakJSLG9CQUFDUyxjQUFNO2NBQUNDLGFBQWEsRUFBQztZQUFPLEVBQUcsRUFDaENWO2NBQUtRLFNBQVMsRUFBQztZQUFnQixHQUMzQlIsb0RBQXFCLEVBQ3JCQSxvQkFBQ1csOENBQXNCLFFBQUUsMERBQTBELENBQTBCLEVBQzdHWCxvQkFBQ1csOENBQXNCLFFBQUUscURBQXFELENBQTBCLENBQ3RHLEVBQ05YO2NBQUtRLFNBQVMsRUFBQztZQUFnQixHQUMzQlIsdURBQXdCLEVBQ3hCQSxvQkFBQ1csOENBQXNCLFFBQUViLDhCQUFjLENBQTBCLEVBQ2pFRSxvQkFBQ1csOENBQXNCLFFBQUVaLCtCQUFlLENBQTBCLENBQ2hFLEVBQ05DO2NBQUtRLFNBQVMsRUFBQztZQUFrQixHQUM3QlIsNkNBQW1CLEVBQ25CQSxvQkFBQ1ksa0JBQVk7Y0FBQ0osU0FBUyxFQUFDLGlCQUFpQjtjQUFDSyxPQUFPLEVBQUVSO1lBQVcsZ0JBQTJCLENBQ3ZGLENBQ0osQ0FDSjtVQUVkIiwibmFtZXMiOlsiQ29udHJvbGxlciIsIlBhZ2VSZWFjdFdpZGdldENvbnRyb2xsZXIiLCJXaWRnZXQiLCJQYWdlIiwiZXhwb3J0cyIsImltcGxlbWVudGF0aW9uIiwiaW1wbGVtZW50YXRpb24yIiwiUmVhY3QiLCJUb2FzdENvbnRleHRQcm92aWRlciIsIlZpZXciLCJSZXN1bHQiLCJhZGQiLCJ0b2dnbGVUb2FzdCIsInR5cGUiLCJtZXNzYWdlIiwiY2xhc3NOYW1lIiwiSGVhZGVyIiwiY29tcG9uZW50TmFtZSIsIkNvcHlhYmxlSW1wbGVtZW50YXRpb24iLCJCZXlvbmRCdXR0b24iLCJvbkNsaWNrIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJwcm9qZWN0L21vZHVsZXMvdG9hc3Qvdmlldy93aWRnZXQvdHMvY29udHJvbGxlci50cyIsInByb2plY3QvbW9kdWxlcy90b2FzdC92aWV3L3dpZGdldC90cy92aWV3cy9pbXBsZW1lbnRhdGlvbi50cyIsInByb2plY3QvbW9kdWxlcy90b2FzdC92aWV3L3dpZGdldC90cy92aWV3cy9pbmRleC50c3giLCJwcm9qZWN0L21vZHVsZXMvdG9hc3Qvdmlldy93aWRnZXQvdHMvdmlld3MvcmVzdWx0LnRzeCIsInByb2plY3QvbW9kdWxlcy90b2FzdC92aWV3L3dpZGdldC90cy92aWV3cy92aWV3LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGwsbnVsbF19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQUNBO1VBRU87VUFBVSxNQUNYQSxVQUFXLFNBQVFDLCtCQUF5QjtZQUM5QyxJQUFJQyxNQUFNO2NBQ04sT0FBT0MsV0FBSTtZQUNmOztVQUNIQzs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNSTSxNQUFNQyxjQUFjLEdBQUc7Ozs7Ozs7Ozs7Ozs7Q0FhN0I7VUFBQ0Q7VUFFSyxNQUFNRSxlQUFlLEdBQUc7Ozs7Ozs7Ozs7Q0FVOUI7VUFBQ0Y7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDekJGO1VBQ0E7VUFDQTtVQUNPO1VBQVUsU0FDUEQsSUFBSTtZQUNiLE9BQ0NJLG9CQUFDQywyQkFBb0IsUUFDcEJELG9CQUFDRSxVQUFJLE9BQUcsQ0FDYztVQUV6Qjs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNWQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFDTztVQUFVLFNBQ0pBLElBQUk7WUFDYixNQUFNO2NBQUVDO1lBQUcsQ0FBRSxHQUFHLDBCQUFlLEdBQUU7WUFDakMsU0FBU0MsV0FBVztjQUNoQkQsR0FBRyxDQUFDO2dCQUNBRSxJQUFJLEVBQUUsTUFBTTtnQkFDWkMsT0FBTyxFQUFFO2VBQ1osQ0FBQztZQUNOO1lBRUEsT0FDSU4saUNBQ0lBO2NBQUtPLFNBQVMsRUFBQztZQUFNLEdBQ2pCUCxvQkFBQ1EsY0FBTTtjQUFDQyxhQUFhLEVBQUM7WUFBTyxFQUFHLEVBQ2hDVDtjQUFLTyxTQUFTLEVBQUM7WUFBZ0IsR0FDM0JQLDBDQUFnQixFQUNoQkEsb0JBQUNVLDhDQUFzQixRQUFFLDBEQUEwRCxDQUEwQixFQUM3R1Ysb0JBQUNVLDhDQUFzQixRQUFFLHFEQUFxRCxDQUEwQixDQUN0RyxFQUNOVjtjQUFLTyxTQUFTLEVBQUM7WUFBMEIsR0FDckNQO2NBQUtPLFNBQVMsRUFBQztZQUFnQixHQUMzQlAsa0RBQXdCLEVBQ3hCQSxvQkFBQ1UsOENBQXNCLFFBQUVaLDhCQUFjLENBQTBCLEVBQ2pFRSxvQkFBQ1UsOENBQXNCLFFBQUVYLCtCQUFlLENBQTBCLENBQ2hFLEVBQ05DO2NBQUtPLFNBQVMsRUFBQztZQUFrQixHQUM3QlAsMENBQWdCLEVBQ2hCQSxvQkFBQ1csa0JBQVk7Y0FBQ0osU0FBUyxFQUFDLGlCQUFpQjtjQUFDSyxPQUFPLEVBQUVSO1lBQVcsZ0JBQTJCLENBQ3ZGLENBQ0osQ0FFSixDQUNKO1VBRWQiLCJuYW1lcyI6WyJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlBhZ2UiLCJleHBvcnRzIiwiaW1wbGVtZW50YXRpb24iLCJpbXBsZW1lbnRhdGlvbjIiLCJSZWFjdCIsIlRvYXN0Q29udGV4dFByb3ZpZGVyIiwiVmlldyIsImFkZCIsInRvZ2dsZVRvYXN0IiwidHlwZSIsIm1lc3NhZ2UiLCJjbGFzc05hbWUiLCJIZWFkZXIiLCJjb21wb25lbnROYW1lIiwiQ29weWFibGVJbXBsZW1lbnRhdGlvbiIsIkJleW9uZEJ1dHRvbiIsIm9uQ2xpY2siXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy90b2FzdC92aWV3L3dpZGdldC90cy9jb250cm9sbGVyLnRzIiwicHJvamVjdC9tb2R1bGVzL3RvYXN0L3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL2ltcGxlbWVudGF0aW9uLnRzIiwicHJvamVjdC9tb2R1bGVzL3RvYXN0L3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL2luZGV4LnRzeCIsInByb2plY3QvbW9kdWxlcy90b2FzdC92aWV3L3dpZGdldC90cy92aWV3cy92aWV3LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGxdfQ==
