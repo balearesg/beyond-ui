@@ -1,4 +1,4 @@
-System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bundle", "@beyond-js/kernel@0.1.2/styles", "@beyond-js/react-widgets@18.20.3/page", "react@18.2.0", "@beyond/ui@1.0.0/image"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.2/render", "@beyond-js/kernel@0.1.7/bundle", "@beyond-js/kernel@0.1.7/styles", "@beyond-js/react-widgets@18.21.1/page", "react@18.2.0", "@bgroup/ui@0.0.21/image"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, bimport, __Bundle, __pkg, ims, Controller, Page, __beyond_pkg, hmr;
@@ -7,22 +7,22 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
     Page: void 0
   });
   return {
-    setters: [function (_beyondJsWidgets011Render) {
-      dependency_0 = _beyondJsWidgets011Render;
-    }, function (_beyondJsKernel012Bundle) {
-      dependency_1 = _beyondJsKernel012Bundle;
-    }, function (_beyondJsKernel012Styles) {
-      dependency_2 = _beyondJsKernel012Styles;
-    }, function (_beyondJsReactWidgets18203Page) {
-      dependency_3 = _beyondJsReactWidgets18203Page;
+    setters: [function (_beyondJsWidgets012Render) {
+      dependency_0 = _beyondJsWidgets012Render;
+    }, function (_beyondJsKernel017Bundle) {
+      dependency_1 = _beyondJsKernel017Bundle;
+    }, function (_beyondJsKernel017Styles) {
+      dependency_2 = _beyondJsKernel017Styles;
+    }, function (_beyondJsReactWidgets18211Page) {
+      dependency_3 = _beyondJsReactWidgets18211Page;
     }, function (_react) {
       dependency_4 = _react;
-    }, function (_beyondUi100Image) {
-      dependency_5 = _beyondUi100Image;
+    }, function (_bgroupUi0021Image) {
+      dependency_5 = _bgroupUi0021Image;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/react-widgets", "18.20.3"], ["@beyond-js/widgets", "0.1.1"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.5.4"], ["@beyond/ui", "1.0.0"], ["@beyond/ui", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/react-widgets", "18.21.1"], ["@beyond-js/widgets", "0.1.2"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.5.4"], ["swiper", "8.4.5"], ["@bgroup/ui", "0.0.21"], ["@bgroup/ui", "0.0.21"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -30,19 +30,19 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond/ui@1.0.0/coming-soon"
+          "vspecifier": "@bgroup/ui@0.0.21/coming-soon"
         },
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-widgets/page', dependency_3], ['react', dependency_4], ['@beyond/ui/image', dependency_5]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/kernel/styles', dependency_2], ['@beyond-js/react-widgets/page', dependency_3], ['react', dependency_4], ['@bgroup/ui/image', dependency_5]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "coming-soon",
-        "vspecifier": "@beyond/ui@1.0.0/coming-soon",
+        "vspecifier": "@bgroup/ui@0.0.21/coming-soon",
         "is": "page",
         "route": "/components/coming-soon"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@beyond/ui@1.0.0/coming-soon');
+      brequire('@beyond-js/kernel/styles').styles.register('@bgroup/ui@0.0.21/coming-soon');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
@@ -73,7 +73,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 3567711946,
+        hash: 3617674570,
         creator: function (require, exports) {
           "use strict";
 
@@ -82,20 +82,13 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
           });
           exports.Page = Page;
           var React = require("react");
-          var _image = require("@beyond/ui/image");
           /*bundle*/
           function Page() {
             return React.createElement("div", {
               className: "page__container"
             }, React.createElement("div", {
               className: 'build-container'
-            }, React.createElement(_image.BeyondImage, {
-              alt: "",
-              src: `${globalThis.baseDir}assets/launch.png`
-            }), React.createElement("h5", null, "This page is under construction "), React.createElement(_image.BeyondImage, {
-              alt: " ",
-              src: `${globalThis.baseDir}assets/animation_500_lb6y61aw.gif`
-            })));
+            }, React.createElement("h5", null, "This page is under construction ")));
           }
         }
       });
@@ -126,4 +119,4 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQ2pELElBQUlDLE1BQU07Y0FDVCxPQUFPQyxXQUFJO1lBQ1o7O1VBQ0FDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JEO1VBQ0E7VUFDTztVQUFVLFNBQ1BELElBQUk7WUFDYixPQUNDRTtjQUFLQyxTQUFTLEVBQUM7WUFBaUIsR0FDL0JEO2NBQUtDLFNBQVMsRUFBQztZQUFpQixHQUM5QkQsb0JBQUNFLGtCQUFXO2NBQUNDLEdBQUcsRUFBQyxFQUFFO2NBQUNDLEdBQUcsRUFBRSxHQUFHQyxVQUFVLENBQUNDLE9BQU87WUFBbUIsRUFBSSxFQUN0RU4sbUVBQXlDLEVBQ3pDQSxvQkFBQ0Usa0JBQVc7Y0FBQ0MsR0FBRyxFQUFDLEdBQUc7Y0FBQ0MsR0FBRyxFQUFFLEdBQUdDLFVBQVUsQ0FBQ0MsT0FBTztZQUFtQyxFQUFJLENBQ2pGLENBQ0Q7VUFFUiIsIm5hbWVzIjpbIkNvbnRyb2xsZXIiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiV2lkZ2V0IiwiUGFnZSIsImV4cG9ydHMiLCJSZWFjdCIsImNsYXNzTmFtZSIsIkJleW9uZEltYWdlIiwiYWx0Iiwic3JjIiwiZ2xvYmFsVGhpcyIsImJhc2VEaXIiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy9jb21pbWctc29vbi90cy9jb250cm9sbGVyLnRzIiwicHJvamVjdC9tb2R1bGVzL2NvbWltZy1zb29uL3RzL3ZpZXdzL2luZGV4LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbF19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFFTztVQUFVLE1BQ1hBLFVBQVcsU0FBUUMsK0JBQXlCO1lBQ2pELElBQUlDLE1BQU07Y0FDVCxPQUFPQyxXQUFJO1lBQ1o7O1VBQ0FDOzs7Ozs7Ozs7Ozs7Ozs7OztVQ1JEO1VBRU87VUFBVSxTQUNQRCxJQUFJO1lBQ2IsT0FDQ0U7Y0FBS0MsU0FBUyxFQUFDO1lBQWlCLEdBQy9CRDtjQUFLQyxTQUFTLEVBQUM7WUFBaUIsR0FFL0JELG1FQUF5QyxDQUVwQyxDQUNEO1VBRVIiLCJuYW1lcyI6WyJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlBhZ2UiLCJleHBvcnRzIiwiUmVhY3QiLCJjbGFzc05hbWUiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInRzL2NvbnRyb2xsZXIudHMiLCJ0cy92aWV3cy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGxdfQ==

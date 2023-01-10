@@ -1,0 +1,35 @@
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  background-color: #ccc;
+  border-radius: 0.5rem;
+}
+.code-inputs input {
+  width: 100%;
+  padding: 0;
+  margin: 0 5px 1rem;
+  background-color: inherit;
+  font-weight: 900;
+  font-size: 40px;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  caret-color: rgb(0, 0, 7);
+  text-align: center;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
+}
+.code-inputs input:focus {
+  border-color: rgb(61, 61, 61);
+}
+@media screen and (max-width: 320px) {
+  .code-inputs input {
+    font-size: 35px;
+  }
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvZGVcXHNjc3NcXHN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUVGO0VBdkJGO0lBd0JJIiwiZmlsZSI6IiJ9 */

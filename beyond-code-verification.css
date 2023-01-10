@@ -1,0 +1,14 @@
+.code-inputs.code-result {
+  padding: 2rem 2rem 0;
+  background-color: var(--text-on-primary);
+}
+.code-inputs.code-result input {
+  caret-color: var(--primary);
+  color: var(--secondary-dark);
+}
+.code-inputs.code-result input:focus {
+  border-color: var(--primary);
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldFxcc2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUU7RUFDRTtFQUNBOztBQUNFO0VBQ0U7RUFDQTs7QUFDQTtFQUNFIiwiZmlsZSI6IiJ9 */

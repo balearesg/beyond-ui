@@ -5,8 +5,8 @@ System.register([], function (_export, _context) {
     setters: [],
     execute: function () {
       _export("default", {
-        "package": "@beyond/ui",
-        "version": "1.0.0",
+        "package": "@bgroup/ui",
+        "version": "0.0.21",
         "languages": {
           "default": "en",
           "supported": ["en", "es"]

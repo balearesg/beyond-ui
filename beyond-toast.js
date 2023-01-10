@@ -1,33 +1,37 @@
-System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bundle", "@beyond-js/react-widgets@18.20.3/page", "react@18.2.0", "@beyond/ui@1.0.0/toast", "@beyond/ui@1.0.0/header", "@beyond/ui@1.0.0/copyable-implementation", "@beyond/ui@1.0.0/form"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.2/render", "@beyond-js/kernel@0.1.7/bundle", "@beyond-js/react-widgets@18.21.1/page", "react@18.2.0", "@bgroup/ui@0.0.21/toast", "@bgroup/ui@0.0.21/header", "@bgroup/ui@0.0.21/copyable-implementation", "@bgroup/ui@0.0.21/form", "@bgroup/ui@0.0.21/implementation-result", "@beyond-js/kernel@0.1.7/styles"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, bimport, __Bundle, __pkg, ims, Controller, Page, View, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Controller, Page, View, __beyond_pkg, hmr;
   _export({
     Controller: void 0,
     Page: void 0,
     View: void 0
   });
   return {
-    setters: [function (_beyondJsWidgets011Render) {
-      dependency_0 = _beyondJsWidgets011Render;
-    }, function (_beyondJsKernel012Bundle) {
-      dependency_1 = _beyondJsKernel012Bundle;
-    }, function (_beyondJsReactWidgets18203Page) {
-      dependency_2 = _beyondJsReactWidgets18203Page;
+    setters: [function (_beyondJsWidgets012Render) {
+      dependency_0 = _beyondJsWidgets012Render;
+    }, function (_beyondJsKernel017Bundle) {
+      dependency_1 = _beyondJsKernel017Bundle;
+    }, function (_beyondJsReactWidgets18211Page) {
+      dependency_2 = _beyondJsReactWidgets18211Page;
     }, function (_react) {
       dependency_3 = _react;
-    }, function (_beyondUi100Toast) {
-      dependency_4 = _beyondUi100Toast;
-    }, function (_beyondUi100Header) {
-      dependency_5 = _beyondUi100Header;
-    }, function (_beyondUi100CopyableImplementation) {
-      dependency_6 = _beyondUi100CopyableImplementation;
-    }, function (_beyondUi100Form) {
-      dependency_7 = _beyondUi100Form;
+    }, function (_bgroupUi0021Toast) {
+      dependency_4 = _bgroupUi0021Toast;
+    }, function (_bgroupUi0021Header) {
+      dependency_5 = _bgroupUi0021Header;
+    }, function (_bgroupUi0021CopyableImplementation) {
+      dependency_6 = _bgroupUi0021CopyableImplementation;
+    }, function (_bgroupUi0021Form) {
+      dependency_7 = _bgroupUi0021Form;
+    }, function (_bgroupUi0021ImplementationResult) {
+      dependency_8 = _bgroupUi0021ImplementationResult;
+    }, function (_beyondJsKernel017Styles) {
+      dependency_9 = _beyondJsKernel017Styles;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/react-widgets", "18.20.3"], ["@beyond-js/widgets", "0.1.1"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.5.4"], ["@beyond/ui", "1.0.0"], ["@beyond/ui", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/react-widgets", "18.21.1"], ["@beyond-js/widgets", "0.1.2"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.5.4"], ["swiper", "8.4.5"], ["@bgroup/ui", "0.0.21"], ["@bgroup/ui", "0.0.21"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -35,18 +39,19 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond/ui@1.0.0/beyond-toast"
+          "vspecifier": "@bgroup/ui@0.0.21/beyond-toast"
         },
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-widgets/page', dependency_2], ['react', dependency_3], ['@beyond/ui/toast', dependency_4], ['@beyond/ui/header', dependency_5], ['@beyond/ui/copyable-implementation', dependency_6], ['@beyond/ui/form', dependency_7]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-widgets/page', dependency_2], ['react', dependency_3], ['@bgroup/ui/toast', dependency_4], ['@bgroup/ui/header', dependency_5], ['@bgroup/ui/copyable-implementation', dependency_6], ['@bgroup/ui/form', dependency_7], ['@bgroup/ui/implementation-result', dependency_8], ['@beyond-js/kernel/styles', dependency_9]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "beyond-toast",
-        "vspecifier": "@beyond/ui@1.0.0/beyond-toast",
+        "vspecifier": "@bgroup/ui@0.0.21/beyond-toast",
         "is": "page",
         "route": "/components/beyond-toast"
       }]);
+      brequire('@beyond-js/kernel/styles').styles.register('@bgroup/ui@0.0.21/beyond-toast');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
@@ -77,21 +82,21 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       **************************************/
 
       ims.set('./views/implementation', {
-        hash: 3474409886,
+        hash: 3697539139,
         creator: function (require, exports) {
           "use strict";
 
           Object.defineProperty(exports, "__esModule", {
             value: true
           });
-          exports.implementation2 = exports.implementation = void 0;
+          exports.implementationWaring = exports.implementationSuccess = exports.implementationInfo = exports.implementationError = exports.implementation2 = exports.implementation = void 0;
           const implementation = `
-import { useToastContext } from "@beyond/ui/toast";
+import { useToastContext } from "@bgroup/ui/toast";
 export function ImplementationToast() {
     function toggleToast() {
         add({
             type: "info",
-            message: "Name copied",
+            message: "This is an example",
         });
     }
     return (
@@ -101,7 +106,7 @@ export function ImplementationToast() {
 `;
           exports.implementation = implementation;
           const implementation2 = `
-import { ToastContextProvider } from '@beyond/ui/toast';
+import { ToastContextProvider } from '@bgroup/ui/toast';
 import { ImplementationToast } from './implementation-toast';
 export function View() {
 	return (
@@ -112,6 +117,42 @@ export function View() {
 }
 `;
           exports.implementation2 = implementation2;
+          const implementationSuccess = `
+function toggleToast() {
+    add({
+        type: "success",
+        message: "This is an example of success toast",
+    });
+}
+`;
+          exports.implementationSuccess = implementationSuccess;
+          const implementationError = `
+function toggleToast() {
+    add({
+        type: "error",
+        message: "This is an example of error toast",
+    });
+}
+`;
+          exports.implementationError = implementationError;
+          const implementationWaring = `
+function toggleToast() {
+    add({
+        type: "warning",
+        message: "This is an example of warning toast",
+    });
+}
+`;
+          exports.implementationWaring = implementationWaring;
+          const implementationInfo = `
+function toggleToast() {
+    add({
+        type: "info",
+        message: "This is an example of info toast",
+    });
+}
+`;
+          exports.implementationInfo = implementationInfo;
         }
       });
 
@@ -120,7 +161,7 @@ export function View() {
       *****************************/
 
       ims.set('./views/index', {
-        hash: 4240291021,
+        hash: 4096591602,
         creator: function (require, exports) {
           "use strict";
 
@@ -129,7 +170,7 @@ export function View() {
           });
           exports.Page = Page;
           var React = require("react");
-          var _toast = require("@beyond/ui/toast");
+          var _toast = require("@bgroup/ui/toast");
           var _view = require("./view");
           /*bundle*/
           function Page() {
@@ -143,7 +184,7 @@ export function View() {
       ****************************/
 
       ims.set('./views/view', {
-        hash: 524028437,
+        hash: 786735852,
         creator: function (require, exports) {
           "use strict";
 
@@ -152,20 +193,24 @@ export function View() {
           });
           exports.View = View;
           var React = require("react");
-          var _header = require("@beyond/ui/header");
-          var _toast = require("@beyond/ui/toast");
-          var _copyableImplementation = require("@beyond/ui/copyable-implementation");
+          var _header = require("@bgroup/ui/header");
+          var _toast = require("@bgroup/ui/toast");
+          var _copyableImplementation = require("@bgroup/ui/copyable-implementation");
           var _implementation = require("./implementation");
-          var _form = require("@beyond/ui/form");
+          var _form = require("@bgroup/ui/form");
+          var _implementationResult = require("@bgroup/ui/implementation-result");
           /*bundle*/
           function View() {
             const {
               add
             } = (0, _toast.useToastContext)();
-            function toggleToast() {
+            function toggleToast(event) {
+              const {
+                dataset
+              } = event.currentTarget;
               add({
-                type: "info",
-                message: "This is an example"
+                type: dataset.type,
+                message: dataset.message
               });
             }
             return React.createElement("div", null, React.createElement("div", {
@@ -174,16 +219,46 @@ export function View() {
               componentName: "Toast"
             }), React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Import:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { ToastContextProvider } from '@beyond/ui/toast';`), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { useToastContext } from '@beyond/ui/toast';`)), React.createElement("div", {
-              className: 'component-implementation'
+            }, React.createElement("h3", null, "Import:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { ToastContextProvider } from '@bgroup/toast';`), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { useToastContext } from '@bgroup/toast';`)), React.createElement("div", {
+              className: "component-implementation"
             }, React.createElement("div", {
               className: "component-info"
             }, React.createElement("h3", null, "Implementation:"), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation), React.createElement(_copyableImplementation.CopyableImplementation, null, _implementation.implementation2)), React.createElement("div", {
               className: "component-result"
             }, React.createElement("h3", null, "Result:"), React.createElement(_form.BeyondButton, {
+              "data-type": "info",
+              "data-message": "This is an example",
               className: "btn btn-primary",
               onClick: toggleToast
-            }, "Show Toast")))));
+            }, "Show Toast"), React.createElement("h3", null, "Case success toast"), React.createElement(_implementationResult.ImplementationResult, {
+              code: _implementation.implementationSuccess
+            }, React.createElement(_form.BeyondButton, {
+              "data-type": "success",
+              "data-message": "This is an example of success toast",
+              className: "btn btn-primary",
+              onClick: toggleToast
+            }, "Show success Toast")), React.createElement("h3", null, "Case error toast"), React.createElement(_implementationResult.ImplementationResult, {
+              code: _implementation.implementationError
+            }, React.createElement(_form.BeyondButton, {
+              "data-type": "error",
+              "data-message": "This is an example of error toast",
+              className: "btn btn-primary",
+              onClick: toggleToast
+            }, "Show error Toast")), React.createElement("h3", null, "Case warning toast"), React.createElement(_implementationResult.ImplementationResult, {
+              code: _implementation.implementationError
+            }, React.createElement(_form.BeyondButton, {
+              "data-type": "warning",
+              "data-message": "This is an example of warning toast",
+              className: "btn btn-primary",
+              onClick: toggleToast
+            }, "Show warning Toast")), React.createElement("h3", null, "Case info toast"), React.createElement(_implementationResult.ImplementationResult, {
+              code: _implementation.implementationError
+            }, React.createElement(_form.BeyondButton, {
+              "data-type": "info",
+              "data-message": "This is an example of info toast",
+              className: "btn btn-primary",
+              onClick: toggleToast
+            }, "Show info Toast"))))));
           }
         }
       });
@@ -219,4 +294,4 @@ export function View() {
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7VUFBQTtVQUNBO1VBRU87VUFBVSxNQUNYQSxVQUFXLFNBQVFDLCtCQUF5QjtZQUM5QyxJQUFJQyxNQUFNO2NBQ04sT0FBT0MsV0FBSTtZQUNmOztVQUNIQzs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNSTSxNQUFNQyxjQUFjLEdBQUc7Ozs7Ozs7Ozs7Ozs7Q0FhN0I7VUFBQ0Q7VUFFSyxNQUFNRSxlQUFlLEdBQUc7Ozs7Ozs7Ozs7Q0FVOUI7VUFBQ0Y7Ozs7Ozs7Ozs7Ozs7Ozs7O1VDekJGO1VBQ0E7VUFDQTtVQUNPO1VBQVUsU0FDUEQsSUFBSTtZQUNiLE9BQ0NJLG9CQUFDQywyQkFBb0IsUUFDcEJELG9CQUFDRSxVQUFJLE9BQUcsQ0FDYztVQUV6Qjs7Ozs7Ozs7Ozs7Ozs7Ozs7VUNWQTtVQUNBO1VBQ0E7VUFDQTtVQUNBO1VBQ0E7VUFDTztVQUFVLFNBQ0pBLElBQUk7WUFDYixNQUFNO2NBQUVDO1lBQUcsQ0FBRSxHQUFHLDBCQUFlLEdBQUU7WUFDakMsU0FBU0MsV0FBVztjQUNoQkQsR0FBRyxDQUFDO2dCQUNBRSxJQUFJLEVBQUUsTUFBTTtnQkFDWkMsT0FBTyxFQUFFO2VBQ1osQ0FBQztZQUNOO1lBRUEsT0FDSU4saUNBQ0lBO2NBQUtPLFNBQVMsRUFBQztZQUFNLEdBQ2pCUCxvQkFBQ1EsY0FBTTtjQUFDQyxhQUFhLEVBQUM7WUFBTyxFQUFHLEVBQ2hDVDtjQUFLTyxTQUFTLEVBQUM7WUFBZ0IsR0FDM0JQLDBDQUFnQixFQUNoQkEsb0JBQUNVLDhDQUFzQixRQUFFLDBEQUEwRCxDQUEwQixFQUM3R1Ysb0JBQUNVLDhDQUFzQixRQUFFLHFEQUFxRCxDQUEwQixDQUN0RyxFQUNOVjtjQUFLTyxTQUFTLEVBQUM7WUFBMEIsR0FDckNQO2NBQUtPLFNBQVMsRUFBQztZQUFnQixHQUMzQlAsa0RBQXdCLEVBQ3hCQSxvQkFBQ1UsOENBQXNCLFFBQUVaLDhCQUFjLENBQTBCLEVBQ2pFRSxvQkFBQ1UsOENBQXNCLFFBQUVYLCtCQUFlLENBQTBCLENBQ2hFLEVBQ05DO2NBQUtPLFNBQVMsRUFBQztZQUFrQixHQUM3QlAsMENBQWdCLEVBQ2hCQSxvQkFBQ1csa0JBQVk7Y0FBQ0osU0FBUyxFQUFDLGlCQUFpQjtjQUFDSyxPQUFPLEVBQUVSO1lBQVcsZ0JBQTJCLENBQ3ZGLENBQ0osQ0FFSixDQUNKO1VBRWQiLCJuYW1lcyI6WyJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlBhZ2UiLCJleHBvcnRzIiwiaW1wbGVtZW50YXRpb24iLCJpbXBsZW1lbnRhdGlvbjIiLCJSZWFjdCIsIlRvYXN0Q29udGV4dFByb3ZpZGVyIiwiVmlldyIsImFkZCIsInRvZ2dsZVRvYXN0IiwidHlwZSIsIm1lc3NhZ2UiLCJjbGFzc05hbWUiLCJIZWFkZXIiLCJjb21wb25lbnROYW1lIiwiQ29weWFibGVJbXBsZW1lbnRhdGlvbiIsIkJleW9uZEJ1dHRvbiIsIm9uQ2xpY2siXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbInByb2plY3QvbW9kdWxlcy90b2FzdC92aWV3L3dpZGdldC90cy9jb250cm9sbGVyLnRzIiwicHJvamVjdC9tb2R1bGVzL3RvYXN0L3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL2ltcGxlbWVudGF0aW9uLnRzIiwicHJvamVjdC9tb2R1bGVzL3RvYXN0L3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL2luZGV4LnRzeCIsInByb2plY3QvbW9kdWxlcy90b2FzdC92aWV3L3dpZGdldC90cy92aWV3cy92aWV3LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6W251bGwsbnVsbCxudWxsLG51bGxdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,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QVM7Y0FBQSxnQkFDTixxQ0FBcUM7Y0FDbERKLFNBQVMsRUFBQyxpQkFBaUI7Y0FDM0JLLE9BQU8sRUFBRVg7WUFBVyx3QkFHVCxDQUNJLEVBQ3ZCSixrREFBd0IsRUFDeEJBLG9CQUFDZ0IsMENBQW9CO2NBQUNDLElBQUksRUFBRXBCO1lBQW1CLEdBQzNDRyxvQkFBQ2Msa0JBQVk7Y0FBQSxhQUNDLE1BQU07Y0FBQSxnQkFDSCxrQ0FBa0M7Y0FDL0NKLFNBQVMsRUFBQyxpQkFBaUI7Y0FDM0JLLE9BQU8sRUFBRVg7WUFBVyxxQkFHVCxDQUNJLENBQ3JCLENBQ0osQ0FDSixDQUNKO1VBRWQiLCJuYW1lcyI6WyJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlBhZ2UiLCJleHBvcnRzIiwiaW1wbGVtZW50YXRpb24iLCJpbXBsZW1lbnRhdGlvbjIiLCJpbXBsZW1lbnRhdGlvblN1Y2Nlc3MiLCJpbXBsZW1lbnRhdGlvbkVycm9yIiwiaW1wbGVtZW50YXRpb25XYXJpbmciLCJpbXBsZW1lbnRhdGlvbkluZm8iLCJSZWFjdCIsIlRvYXN0Q29udGV4dFByb3ZpZGVyIiwiVmlldyIsImFkZCIsInRvZ2dsZVRvYXN0IiwiZXZlbnQiLCJkYXRhc2V0IiwiY3VycmVudFRhcmdldCIsInR5cGUiLCJtZXNzYWdlIiwiY2xhc3NOYW1lIiwiSGVhZGVyIiwiY29tcG9uZW50TmFtZSIsIkNvcHlhYmxlSW1wbGVtZW50YXRpb24iLCJCZXlvbmRCdXR0b24iLCJvbkNsaWNrIiwiSW1wbGVtZW50YXRpb25SZXN1bHQiLCJjb2RlIl0sInNvdXJjZVJvb3QiOiIvIiwic291cmNlcyI6WyJ3aWRnZXQvdHMvY29udHJvbGxlci50cyIsIndpZGdldC90cy92aWV3cy9pbXBsZW1lbnRhdGlvbi50cyIsIndpZGdldC90cy92aWV3cy9pbmRleC50c3giLCJ3aWRnZXQvdHMvdmlld3Mvdmlldy50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsXX0=

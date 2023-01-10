@@ -1,0 +1,60 @@
+.swiper-implementation {
+  --swiper-theme-color: var(--primary);
+}
+.swiper-implementation .swiper-container {
+  position: relative;
+}
+.swiper-implementation .swiper-slide {
+  width: auto;
+  max-width: 300px;
+  max-width: 300px;
+}
+.swiper-implementation .swiper-slide .beyond-element-image {
+  max-width: 300px;
+  min-height: 300px;
+  user-select: none;
+}
+.swiper-implementation .swiper-slide .beyond-element-image img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  min-height: 300px;
+  max-height: 300px;
+}
+.swiper-implementation .swiper-slide .beyond-element-image .beyond-element-image-preload {
+  background-color: var(--gray-light);
+}
+.swiper-implementation .swiper-pagination {
+  width: 100%;
+  height: 7px;
+  right: 0;
+  top: auto;
+  left: auto;
+  border-radius: 1rem;
+  z-index: 100;
+}
+.swiper-implementation .swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+.swiper-implementation .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary);
+}
+.swiper-implementation .swiper-pagination .swiper-pagination-progressbar-fill {
+  border-radius: 1rem;
+}
+.swiper-implementation .swiper-button-prev, .swiper-implementation .swiper-button-next {
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 8px;
+}
+.swiper-implementation .swiper-button-prev svg.beyond-icon, .swiper-implementation .swiper-button-next svg.beyond-icon {
+  fill: #fff;
+}
+
+.view .component-implementation {
+  flex-direction: column;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldFxcc2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTs7QUFDQTtFQUNFOztBQUVGO0VBQ0U7RUFDQTtFQUNBOztBQUNBO0VBQ0U7RUFDQTtFQUVBOztBQUNBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFHRjtFQUNFOztBQUtOO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7O0FBQ0E7RUFDRTtFQUNBOztBQUVGO0VBQ0U7O0FBRUY7RUFDRTs7QUFHSjtFQUNFO0VBQ0E7RUFDQTs7QUFDQTtFQUNFOzs7QUFJTjtFQUNFIiwiZmlsZSI6IiJ9 */

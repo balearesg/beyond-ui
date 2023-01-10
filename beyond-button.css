@@ -1,0 +1,12 @@
+.beyond-button.btn {
+  min-width: 7rem;
+  align-self: center;
+  margin: 0 auto;
+  display: block;
+}
+.beyond-button.btn.spinner, .beyond-button.btn.btn-secondary, .beyond-button.btn.btn-border, .beyond-button.btn.btn-cancel {
+  display: block;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndpZGdldFxcc2Nzc1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSTtFQUNBO0VBQ0E7RUFDQTs7QUFDQTtFQUNJIiwiZmlsZSI6IiJ9 */

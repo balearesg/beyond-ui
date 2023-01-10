@@ -13,7 +13,7 @@
     <link rel="icon" href="data:;base64,=">
     
     <script>
-    window.__app_package = {"specifier":"@beyond/ui","vspecifier":"@beyond/ui@1.0.0","version":"1.0.0","dependencies":[["@beyond-js/react-widgets","18.20.3"],["@beyond-js/widgets","0.1.1"],["perfect-scrollbar","1.5.5"],["prism-react-renderer","1.3.5"],["socket.io-client","4.5.4"],["@beyond/ui","1.0.0"]]};
+    window.__app_package = {"specifier":"@bgroup/ui","vspecifier":"@bgroup/ui@0.0.21","version":"0.0.21","dependencies":[["@beyond-js/react-widgets","18.21.1"],["@beyond-js/widgets","0.1.2"],["perfect-scrollbar","1.5.5"],["prism-react-renderer","1.3.5"],["socket.io-client","4.5.4"],["swiper","8.4.5"],["@bgroup/ui","0.0.21"]]};
     
     // Set global baseDir and baseUrl variables
     const baseDir = window.baseDir = '/';
@@ -32,7 +32,7 @@
     </script>
     
     
-    <script src="/packages/@beyond-js/kernel@0.1.2/vendor/s.js"></script>
+    <script src="/packages/@beyond-js/kernel@0.1.7/vendor/s.js"></script>
     <script type="module">
     const {specifier, vspecifier} = window.__app_package;
     const baseDir = '/';
@@ -47,13 +47,13 @@
         return `${baseDir}packages/${pkg}${subpath ? `/${subpath}` : ``}.js${qs}`;
     };
     Promise.all([
-    	System.import('@beyond-js/widgets@0.1.1/render'),
-    	System.import('@beyond-js/widgets@0.1.1/application'),
-    	System.import('@beyond-js/widgets@0.1.1/layout')
+    	System.import('@beyond-js/widgets@0.1.2/render'),
+    	System.import('@beyond-js/widgets@0.1.2/application'),
+    	System.import('@beyond-js/widgets@0.1.2/layout')
     ]);
     Promise.all([
-    	System.import('@beyond-js/kernel@0.1.2/routing'),
-    	System.import('@beyond/ui/start')
+    	System.import('@beyond-js/kernel@0.1.7/routing'),
+    	System.import('@bgroup/ui/start')
     ]).then(([{routing}]) => routing.setup());
     </script>
     

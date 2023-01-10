@@ -1,34 +1,36 @@
-System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bundle", "@beyond-js/react-widgets@18.20.3/page", "react@18.2.0", "@beyond/ui@1.0.0/header", "@beyond/ui@1.0.0/icon", "@beyond/ui@1.0.0/toast", "@beyond/ui@1.0.0/copyable-implementation", "@beyond-js/kernel@0.1.2/styles"], function (_export, _context) {
+System.register(["@beyond-js/widgets@0.1.2/render", "@beyond-js/kernel@0.1.7/bundle", "@beyond-js/react-widgets@18.21.1/page", "react@18.2.0", "@bgroup/ui@0.0.21/header", "@bgroup/ui@0.0.21/icon", "@bgroup/ui@0.0.21/toast", "@bgroup/ui@0.0.21/copyable-implementation", "@bgroup/ui@0.0.21/implementation-result", "@beyond-js/kernel@0.1.7/styles"], function (_export, _context) {
   "use strict";
 
-  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
+  var dependency_0, dependency_1, dependency_2, dependency_3, dependency_4, dependency_5, dependency_6, dependency_7, dependency_8, dependency_9, bimport, __Bundle, __pkg, ims, Controller, View, __beyond_pkg, hmr;
   _export({
     Controller: void 0,
     View: void 0
   });
   return {
-    setters: [function (_beyondJsWidgets011Render) {
-      dependency_0 = _beyondJsWidgets011Render;
-    }, function (_beyondJsKernel012Bundle) {
-      dependency_1 = _beyondJsKernel012Bundle;
-    }, function (_beyondJsReactWidgets18203Page) {
-      dependency_2 = _beyondJsReactWidgets18203Page;
+    setters: [function (_beyondJsWidgets012Render) {
+      dependency_0 = _beyondJsWidgets012Render;
+    }, function (_beyondJsKernel017Bundle) {
+      dependency_1 = _beyondJsKernel017Bundle;
+    }, function (_beyondJsReactWidgets18211Page) {
+      dependency_2 = _beyondJsReactWidgets18211Page;
     }, function (_react2) {
       dependency_3 = _react2;
-    }, function (_beyondUi100Header) {
-      dependency_4 = _beyondUi100Header;
-    }, function (_beyondUi100Icon) {
-      dependency_5 = _beyondUi100Icon;
-    }, function (_beyondUi100Toast) {
-      dependency_6 = _beyondUi100Toast;
-    }, function (_beyondUi100CopyableImplementation) {
-      dependency_7 = _beyondUi100CopyableImplementation;
-    }, function (_beyondJsKernel012Styles) {
-      dependency_8 = _beyondJsKernel012Styles;
+    }, function (_bgroupUi0021Header) {
+      dependency_4 = _bgroupUi0021Header;
+    }, function (_bgroupUi0021Icon) {
+      dependency_5 = _bgroupUi0021Icon;
+    }, function (_bgroupUi0021Toast) {
+      dependency_6 = _bgroupUi0021Toast;
+    }, function (_bgroupUi0021CopyableImplementation) {
+      dependency_7 = _bgroupUi0021CopyableImplementation;
+    }, function (_bgroupUi0021ImplementationResult) {
+      dependency_8 = _bgroupUi0021ImplementationResult;
+    }, function (_beyondJsKernel017Styles) {
+      dependency_9 = _beyondJsKernel017Styles;
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/react-widgets", "18.20.3"], ["@beyond-js/widgets", "0.1.1"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.5.4"], ["@beyond/ui", "1.0.0"], ["@beyond/ui", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/react-widgets", "18.21.1"], ["@beyond-js/widgets", "0.1.2"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.5.4"], ["swiper", "8.4.5"], ["@bgroup/ui", "0.0.21"], ["@bgroup/ui", "0.0.21"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -36,19 +38,19 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       } = dependency_1);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond/ui@1.0.0/beyond-icon"
+          "vspecifier": "@bgroup/ui@0.0.21/beyond-icon"
         },
         "type": "widget"
       }, _context.meta.url).package();
       ;
-      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-widgets/page', dependency_2], ['react', dependency_3], ['@beyond/ui/header', dependency_4], ['@beyond/ui/icon', dependency_5], ['@beyond/ui/toast', dependency_6], ['@beyond/ui/copyable-implementation', dependency_7], ['@beyond-js/kernel/styles', dependency_8]]);
+      __pkg.dependencies.update([['@beyond-js/widgets/render', dependency_0], ['@beyond-js/react-widgets/page', dependency_2], ['react', dependency_3], ['@bgroup/ui/header', dependency_4], ['@bgroup/ui/icon', dependency_5], ['@bgroup/ui/toast', dependency_6], ['@bgroup/ui/copyable-implementation', dependency_7], ['@bgroup/ui/implementation-result', dependency_8], ['@beyond-js/kernel/styles', dependency_9]]);
       brequire('@beyond-js/widgets/render').widgets.register([{
         "name": "beyond-icon",
-        "vspecifier": "@beyond/ui@1.0.0/beyond-icon",
+        "vspecifier": "@bgroup/ui@0.0.21/beyond-icon",
         "is": "page",
         "route": "/components/beyond-icons"
       }]);
-      brequire('@beyond-js/kernel/styles').styles.register('@beyond/ui@1.0.0/beyond-icon');
+      brequire('@beyond-js/kernel/styles').styles.register('@bgroup/ui@0.0.21/beyond-icon');
       ims = new Map();
       /****************************
       INTERNAL MODULE: ./controller
@@ -79,7 +81,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       *****************************/
 
       ims.set('./views/index', {
-        hash: 4257260380,
+        hash: 2215396494,
         creator: function (require, exports) {
           "use strict";
 
@@ -88,10 +90,11 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
           });
           exports.View = View;
           var React = require("react");
-          var _header = require("@beyond/ui/header");
-          var _icon = require("@beyond/ui/icon");
-          var _toast = require("@beyond/ui/toast");
-          var _copyableImplementation = require("@beyond/ui/copyable-implementation");
+          var _header = require("@bgroup/ui/header");
+          var _icon = require("@bgroup/ui/icon");
+          var _toast = require("@bgroup/ui/toast");
+          var _copyableImplementation = require("@bgroup/ui/copyable-implementation");
+          var _implementationResult = require("@bgroup/ui/implementation-result");
           var _item = require("./item");
           var _search = require("./search");
           /*bundle*/
@@ -114,17 +117,34 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
               componentName: "Icons"
             }), React.createElement("div", {
               className: "component-info"
-            }, React.createElement("h3", null, "Import:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondIcon } from '@beyond/ui/icon';`), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondIconButton } from '@beyond/ui/icon';`)), React.createElement("div", {
-              className: 'component-implementation'
+            }, React.createElement("h3", null, "Import:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondIcon } from '@bgroup/icon';`), React.createElement(_copyableImplementation.CopyableImplementation, null, `import { BeyondIconButton } from '@bgroup/icon';`)), React.createElement("div", {
+              className: "component-implementation"
             }, React.createElement("div", {
               className: "component-info"
             }, React.createElement("h3", null, "Implementation:"), React.createElement(_copyableImplementation.CopyableImplementation, null, `<BeyondIcon icon="delete" />`), React.createElement(_copyableImplementation.CopyableImplementation, null, `<BeyondIconButton icon="search" />`)), React.createElement("div", {
               className: "component-result"
-            }, React.createElement("h3", null, "Result:"), React.createElement(_icon.BeyondIcon, {
+            }, React.createElement("h3", null, "Result:"), React.createElement("div", {
+              className: "content-result"
+            }, React.createElement(_icon.BeyondIcon, {
               icon: "delete"
             }), React.createElement(_icon.BeyondIconButton, {
               icon: "search"
-            }))), React.createElement("section", {
+            })), React.createElement("h3", null, "Icon size xs"), React.createElement(_implementationResult.ImplementationResult, {
+              code: `<BeyondIcon className="xs" icon="delete" />`
+            }, React.createElement(_icon.BeyondIcon, {
+              className: "xs",
+              icon: "delete"
+            })), React.createElement("h3", null, "Icon size md"), React.createElement(_implementationResult.ImplementationResult, {
+              code: `<BeyondIcon className="md" icon="delete" />`
+            }, React.createElement(_icon.BeyondIcon, {
+              className: "md",
+              icon: "delete"
+            })), React.createElement("h3", null, "Icon size lg"), React.createElement(_implementationResult.ImplementationResult, {
+              code: `<BeyondIcon className="lg" icon="delete" />`
+            }, React.createElement(_icon.BeyondIcon, {
+              className: "lg",
+              icon: "delete"
+            })))), React.createElement("section", {
               className: "list-container"
             }, React.createElement("h4", null, "Icons list:"), React.createElement(_search.Search, {
               onSearch: onSearch
@@ -140,7 +160,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       ****************************/
 
       ims.set('./views/item', {
-        hash: 982955706,
+        hash: 4010279801,
         creator: function (require, exports) {
           "use strict";
 
@@ -149,8 +169,8 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
           });
           exports.Item = Item;
           var _react = require("react");
-          var _icon = require("@beyond/ui/icon");
-          var _toast = require("@beyond/ui/toast");
+          var _icon = require("@bgroup/ui/icon");
+          var _toast = require("@bgroup/ui/toast");
           function Item(props) {
             const {
               icon
@@ -180,7 +200,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
       ******************************/
 
       ims.set('./views/search', {
-        hash: 3789765794,
+        hash: 1879352088,
         creator: function (require, exports) {
           "use strict";
 
@@ -189,7 +209,7 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
           });
           exports.Search = Search;
           var _react = require("react");
-          var _icon = require("@beyond/ui/icon");
+          var _icon = require("@bgroup/ui/icon");
           function Search({
             onSearch
           }) {
@@ -241,4 +261,4 @@ System.register(["@beyond-js/widgets@0.1.1/render", "@beyond-js/kernel@0.1.2/bun
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,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WUFBYyxHQUNyRGhCLDZCQUFDb0IsZ0JBQVU7Y0FBQ2IsSUFBSSxFQUFFQTtZQUFJLEVBQUksRUFDMUJQLDJDQUFPTyxJQUFJLENBQVEsQ0FDWDtVQUVYOzs7Ozs7Ozs7Ozs7Ozs7OztVQ3BCQTtVQUNBO1VBQ00sU0FBVWUsTUFBTSxDQUFDO1lBQUVkO1VBQVEsQ0FBRTtZQUMvQixNQUFNLENBQUVDLEtBQUssRUFBRXVCLFFBQVEsQ0FBRSxHQUFHaEMsY0FBSyxDQUFDQyxRQUFRLENBQVMsRUFBRSxDQUFDO1lBQ3RELE1BQU1nQyxZQUFZLEdBQUlDLEtBQTBDLElBQVc7Y0FDdkUsTUFBTTtnQkFBRXpCO2NBQUssQ0FBRSxHQUFHeUIsS0FBSyxDQUFDQyxhQUFhO2NBQ3JDSCxRQUFRLENBQUN2QixLQUFLLENBQUM7Y0FDZixJQUFHRCxRQUFRLEVBQUVBLFFBQVEsQ0FBQ0MsS0FBSyxDQUFDO1lBQ2hDLENBQUM7WUFDSCxPQUNFVCwwQ0FDSUE7Y0FBS2dCLFNBQVMsRUFBQztZQUFrQixHQUM3QmhCLDZCQUFDb0IsZ0JBQVU7Y0FBQ2IsSUFBSSxFQUFDO1lBQVEsRUFBRyxFQUM1QlA7Y0FBTzZCLElBQUksRUFBQyxRQUFRO2NBQUNwQixLQUFLLEVBQUVBLEtBQUs7Y0FBRTJCLFdBQVcsRUFBQyxXQUFXO2NBQUNDLFFBQVEsRUFBRUo7WUFBWSxFQUFLLENBQ3BGLENBQ0o7VUFFViIsIm5hbWVzIjpbIkNvbnRyb2xsZXIiLCJQYWdlUmVhY3RXaWRnZXRDb250cm9sbGVyIiwiV2lkZ2V0IiwiVmlldyIsImV4cG9ydHMiLCJrZXlJY29ucyIsIk9iamVjdCIsImtleXMiLCJCRVlPTkRfSUNPTlMiLCJpdGVtcyIsInNldEl0ZW1zIiwiUmVhY3QiLCJ1c2VTdGF0ZSIsIm91dHB1dCIsIm1hcCIsIml0ZW0iLCJJdGVtIiwia2V5IiwiaWNvbiIsIm9uU2VhcmNoIiwidmFsdWUiLCJmaWx0ZXJJY29ucyIsImZpbHRlciIsInRvTG93ZXJDYXNlIiwiaW5jbHVkZXMiLCJ0cmltIiwiVG9hc3RDb250ZXh0UHJvdmlkZXIiLCJjbGFzc05hbWUiLCJIZWFkZXIiLCJjb21wb25lbnROYW1lIiwiQ29weWFibGVJbXBsZW1lbnRhdGlvbiIsIkJleW9uZEljb24iLCJCZXlvbmRJY29uQnV0dG9uIiwiU2VhcmNoIiwicHJvcHMiLCJhZGQiLCJoYW5kbGVDbGljayIsIm5hdmlnYXRvciIsImNsaXBib2FyZCIsIndyaXRlVGV4dCIsInR5cGUiLCJtZXNzYWdlIiwib25DbGljayIsInNldFZhbHVlIiwiaGFuZGxlQ2hhbmdlIiwiZXZlbnQiLCJjdXJyZW50VGFyZ2V0IiwicGxhY2Vob2xkZXIiLCJvbkNoYW5nZSJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsicHJvamVjdC9tb2R1bGVzL2ljb25zL3ZpZXcvd2lkZ2V0L3RzL2NvbnRyb2xsZXIudHMiLCJwcm9qZWN0L21vZHVsZXMvaWNvbnMvdmlldy93aWRnZXQvdHMvdmlld3MvaW5kZXgudHN4IiwicHJvamVjdC9tb2R1bGVzL2ljb25zL3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL2l0ZW0udHN4IiwicHJvamVjdC9tb2R1bGVzL2ljb25zL3ZpZXcvd2lkZ2V0L3RzL3ZpZXdzL3NlYXJjaC50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsLG51bGwsbnVsbCxudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,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LGdCQUFVO2NBQUNiLElBQUksRUFBQztZQUFRLEVBQUcsRUFDNUJQO2NBQU8rQixJQUFJLEVBQUMsUUFBUTtjQUFDdEIsS0FBSyxFQUFFQSxLQUFLO2NBQUU2QixXQUFXLEVBQUMsV0FBVztjQUFDQyxRQUFRLEVBQUVKO1lBQVksRUFBSyxDQUNwRixDQUNKO1VBRVYiLCJuYW1lcyI6WyJDb250cm9sbGVyIiwiUGFnZVJlYWN0V2lkZ2V0Q29udHJvbGxlciIsIldpZGdldCIsIlZpZXciLCJleHBvcnRzIiwia2V5SWNvbnMiLCJPYmplY3QiLCJrZXlzIiwiQkVZT05EX0lDT05TIiwiaXRlbXMiLCJzZXRJdGVtcyIsIlJlYWN0IiwidXNlU3RhdGUiLCJvdXRwdXQiLCJtYXAiLCJpdGVtIiwiSXRlbSIsImtleSIsImljb24iLCJvblNlYXJjaCIsInZhbHVlIiwiZmlsdGVySWNvbnMiLCJmaWx0ZXIiLCJ0b0xvd2VyQ2FzZSIsImluY2x1ZGVzIiwidHJpbSIsIlRvYXN0Q29udGV4dFByb3ZpZGVyIiwiY2xhc3NOYW1lIiwiSGVhZGVyIiwiY29tcG9uZW50TmFtZSIsIkNvcHlhYmxlSW1wbGVtZW50YXRpb24iLCJCZXlvbmRJY29uIiwiQmV5b25kSWNvbkJ1dHRvbiIsIkltcGxlbWVudGF0aW9uUmVzdWx0IiwiY29kZSIsIlNlYXJjaCIsInByb3BzIiwiYWRkIiwiaGFuZGxlQ2xpY2siLCJuYXZpZ2F0b3IiLCJjbGlwYm9hcmQiLCJ3cml0ZVRleHQiLCJ0eXBlIiwibWVzc2FnZSIsIm9uQ2xpY2siLCJzZXRWYWx1ZSIsImhhbmRsZUNoYW5nZSIsImV2ZW50IiwiY3VycmVudFRhcmdldCIsInBsYWNlaG9sZGVyIiwib25DaGFuZ2UiXSwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzIjpbIndpZGdldC90cy9jb250cm9sbGVyLnRzIiwid2lkZ2V0L3RzL3ZpZXdzL2luZGV4LnRzeCIsIndpZGdldC90cy92aWV3cy9pdGVtLnRzeCIsIndpZGdldC90cy92aWV3cy9zZWFyY2gudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbCxudWxsLG51bGwsbnVsbF19

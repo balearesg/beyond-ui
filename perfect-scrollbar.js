@@ -1,13 +1,13 @@
-System.register(["@beyond-js/kernel@0.1.2/bundle", "@beyond-js/kernel@0.1.2/styles", "react@18.2.0", "perfect-scrollbar@1.5.5"], function (_export, _context) {
+System.register(["@beyond-js/kernel@0.1.7/bundle", "@beyond-js/kernel@0.1.7/styles", "react@18.2.0", "perfect-scrollbar@1.5.5"], function (_export, _context) {
   "use strict";
 
   var dependency_0, dependency_1, dependency_2, dependency_3, bimport, __Bundle, __pkg, ims, BeyondScrollContainer, __beyond_pkg, hmr;
   _export("BeyondScrollContainer", void 0);
   return {
-    setters: [function (_beyondJsKernel012Bundle) {
-      dependency_0 = _beyondJsKernel012Bundle;
-    }, function (_beyondJsKernel012Styles) {
-      dependency_1 = _beyondJsKernel012Styles;
+    setters: [function (_beyondJsKernel017Bundle) {
+      dependency_0 = _beyondJsKernel017Bundle;
+    }, function (_beyondJsKernel017Styles) {
+      dependency_1 = _beyondJsKernel017Styles;
     }, function (_react2) {
       dependency_2 = _react2;
     }, function (_perfectScrollbar2) {
@@ -15,7 +15,7 @@ System.register(["@beyond-js/kernel@0.1.2/bundle", "@beyond-js/kernel@0.1.2/styl
     }],
     execute: function () {
       bimport = specifier => {
-        const dependencies = new Map([["@beyond-js/react-widgets", "18.20.3"], ["@beyond-js/widgets", "0.1.1"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.5.4"], ["@beyond/ui", "1.0.0"], ["@beyond/ui", "1.0.0"]]);
+        const dependencies = new Map([["@beyond-js/react-widgets", "18.21.1"], ["@beyond-js/widgets", "0.1.2"], ["perfect-scrollbar", "1.5.5"], ["prism-react-renderer", "1.3.5"], ["socket.io-client", "4.5.4"], ["swiper", "8.4.5"], ["@bgroup/ui", "0.0.21"], ["@bgroup/ui", "0.0.21"]]);
         return globalThis.bimport(globalThis.bimport.resolve(specifier, dependencies));
       };
       ({
@@ -23,14 +23,14 @@ System.register(["@beyond-js/kernel@0.1.2/bundle", "@beyond-js/kernel@0.1.2/styl
       } = dependency_0);
       __pkg = new __Bundle({
         "module": {
-          "vspecifier": "@beyond/ui@1.0.0/perfect-scrollbar"
+          "vspecifier": "@bgroup/ui@0.0.21/perfect-scrollbar"
         },
         "type": "code",
         "name": "perfect-scrollbar"
       }, _context.meta.url).package();
       ;
       __pkg.dependencies.update([['@beyond-js/kernel/styles', dependency_1], ['react', dependency_2], ['perfect-scrollbar', dependency_3]]);
-      brequire('@beyond-js/kernel/styles').styles.register('@beyond/ui@1.0.0/perfect-scrollbar');
+      brequire('@beyond-js/kernel/styles').styles.register('@bgroup/ui@0.0.21/perfect-scrollbar');
       ims = new Map();
       /***************************
       INTERNAL MODULE: ./container
@@ -110,4 +110,4 @@ System.register(["@beyond-js/kernel@0.1.2/bundle", "@beyond-js/kernel@0.1.2/styl
     }
   };
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFlTyxXQU5QOzs7Ozs7VUFNaUIsU0FDTkEscUJBQXFCLENBQUNDLEtBQVk7WUFDM0MsTUFBTUMsR0FBRyxHQUFxQyxpQkFBTSxFQUFDLElBQUksQ0FBQztZQUUxRCxvQkFBUyxFQUFDLE1BQW1CO2NBQzNCLE1BQU1DLE9BQU8sR0FBbUJELEdBQUcsQ0FBQ0UsT0FBTztjQUUzQyxNQUFNQyxTQUFTLEdBQXFCLElBQUlDLHlCQUFnQixDQUFDSCxPQUFPLEVBQUU7Z0JBQ2hFSSxVQUFVLEVBQUUsQ0FBQztnQkFDYkMsZ0JBQWdCLEVBQUUsSUFBSTtnQkFDdEJDLGtCQUFrQixFQUFFO2VBQ3JCLENBQUM7Y0FDRixNQUFNQyxlQUFlLEdBQUlDLEtBQUssSUFBVTtnQkFDdENWLEtBQUssQ0FBQ1csU0FBUyxDQUFDRCxLQUFLLEVBQUVSLE9BQU8sRUFBRUUsU0FBUyxDQUFDO2NBQzVDLENBQUM7Y0FFRCxNQUFNUSxlQUFlLEdBQUlGLEtBQUssSUFBVTtnQkFDdENWLEtBQUssQ0FBQ1csU0FBUyxDQUFDRCxLQUFLLEVBQUVSLE9BQU8sRUFBRUUsU0FBUyxDQUFDO2NBQzVDLENBQUM7Y0FDRCxNQUFNO2dCQUFFTyxTQUFTO2dCQUFFRTtjQUFTLENBQUUsR0FBR2IsS0FBSztjQUN0QyxJQUFJVyxTQUFTLEVBQUVULE9BQU8sQ0FBQ1ksZ0JBQWdCLENBQUMsYUFBYSxFQUFFTCxlQUFlLENBQUM7Y0FDdkUsSUFBSUksU0FBUyxFQUFFWCxPQUFPLENBQUNZLGdCQUFnQixDQUFDLGFBQWEsRUFBRUYsZUFBZSxDQUFDO2NBQ3ZFLE9BQU8sTUFBSztnQkFDVlIsU0FBUyxDQUFDVyxPQUFPLEVBQUU7Z0JBRW5CLElBQUlKLFNBQVMsRUFBRVYsR0FBRyxDQUFDRSxPQUFPLENBQUNhLG1CQUFtQixDQUFDLGFBQWEsRUFBRUwsU0FBUyxDQUFDO2dCQUN4RSxJQUFJRSxTQUFTLEVBQ1haLEdBQUcsQ0FBQ0UsT0FBTyxDQUFDYSxtQkFBbUIsQ0FBQyxhQUFhLEVBQUVKLGVBQWUsQ0FBQztjQUNuRSxDQUFDO1lBQ0gsQ0FBQyxFQUFFLEVBQUUsQ0FBQztZQUVOLElBQUlLLEdBQUcsR0FBV2pCLEtBQUssQ0FBQ2tCLFNBQVMsR0FDN0IsNEJBQTRCbEIsS0FBSyxDQUFDa0IsU0FBUyxFQUFFLEdBQzdDLDBCQUEwQjtZQUM5QixPQUNFQztjQUFLbEIsR0FBRyxFQUFFQSxHQUFHO2NBQUVpQixTQUFTLEVBQUVEO1lBQUcsR0FDMUJqQixLQUFLLENBQUNvQixRQUFRLENBQ1g7VUFFVjtVQUFDIiwibmFtZXMiOlsiQmV5b25kU2Nyb2xsQ29udGFpbmVyIiwicHJvcHMiLCJyZWYiLCJjb250cm9sIiwiY3VycmVudCIsInNjcm9sbGJhciIsIlBlcmZlY3RTY3JvbGxiYXIiLCJ3aGVlbFNwZWVkIiwid2hlZWxQcm9wYWdhdGlvbiIsIm1pblNjcm9sbGJhckxlbmd0aCIsImhhbmRsZU9uU2Nyb2xsWSIsImV2ZW50Iiwib25TY3JvbGxZIiwiaGFuZGxlT25TY3JvbGxYIiwib25TY3JvbGxYIiwiYWRkRXZlbnRMaXN0ZW5lciIsImRlc3Ryb3kiLCJyZW1vdmVFdmVudExpc3RlbmVyIiwiY2xzIiwiY2xhc3NOYW1lIiwiUmVhY3QiLCJjaGlsZHJlbiJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsicHJvamVjdC9tb2R1bGVzL3BlcmZlY3Qtc2Nyb2xsYmFyL2NvbXBvbmVudC9jb2RlL3RzL2NvbnRhaW5lci50c3giXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztVQUFBO1VBQ0E7VUFlTyxXQU5QOzs7Ozs7VUFNaUIsU0FDTkEscUJBQXFCLENBQUNDLEtBQVk7WUFDM0MsTUFBTUMsR0FBRyxHQUFxQyxpQkFBTSxFQUFDLElBQUksQ0FBQztZQUUxRCxvQkFBUyxFQUFDLE1BQW1CO2NBQzNCLE1BQU1DLE9BQU8sR0FBbUJELEdBQUcsQ0FBQ0UsT0FBTztjQUUzQyxNQUFNQyxTQUFTLEdBQXFCLElBQUlDLHlCQUFnQixDQUFDSCxPQUFPLEVBQUU7Z0JBQ2hFSSxVQUFVLEVBQUUsQ0FBQztnQkFDYkMsZ0JBQWdCLEVBQUUsSUFBSTtnQkFDdEJDLGtCQUFrQixFQUFFO2VBQ3JCLENBQUM7Y0FDRixNQUFNQyxlQUFlLEdBQUlDLEtBQUssSUFBVTtnQkFDdENWLEtBQUssQ0FBQ1csU0FBUyxDQUFDRCxLQUFLLEVBQUVSLE9BQU8sRUFBRUUsU0FBUyxDQUFDO2NBQzVDLENBQUM7Y0FFRCxNQUFNUSxlQUFlLEdBQUlGLEtBQUssSUFBVTtnQkFDdENWLEtBQUssQ0FBQ1csU0FBUyxDQUFDRCxLQUFLLEVBQUVSLE9BQU8sRUFBRUUsU0FBUyxDQUFDO2NBQzVDLENBQUM7Y0FDRCxNQUFNO2dCQUFFTyxTQUFTO2dCQUFFRTtjQUFTLENBQUUsR0FBR2IsS0FBSztjQUN0QyxJQUFJVyxTQUFTLEVBQUVULE9BQU8sQ0FBQ1ksZ0JBQWdCLENBQUMsYUFBYSxFQUFFTCxlQUFlLENBQUM7Y0FDdkUsSUFBSUksU0FBUyxFQUFFWCxPQUFPLENBQUNZLGdCQUFnQixDQUFDLGFBQWEsRUFBRUYsZUFBZSxDQUFDO2NBQ3ZFLE9BQU8sTUFBSztnQkFDVlIsU0FBUyxDQUFDVyxPQUFPLEVBQUU7Z0JBRW5CLElBQUlKLFNBQVMsRUFBRVYsR0FBRyxDQUFDRSxPQUFPLENBQUNhLG1CQUFtQixDQUFDLGFBQWEsRUFBRUwsU0FBUyxDQUFDO2dCQUN4RSxJQUFJRSxTQUFTLEVBQ1haLEdBQUcsQ0FBQ0UsT0FBTyxDQUFDYSxtQkFBbUIsQ0FBQyxhQUFhLEVBQUVKLGVBQWUsQ0FBQztjQUNuRSxDQUFDO1lBQ0gsQ0FBQyxFQUFFLEVBQUUsQ0FBQztZQUVOLElBQUlLLEdBQUcsR0FBV2pCLEtBQUssQ0FBQ2tCLFNBQVMsR0FDN0IsNEJBQTRCbEIsS0FBSyxDQUFDa0IsU0FBUyxFQUFFLEdBQzdDLDBCQUEwQjtZQUM5QixPQUNFQztjQUFLbEIsR0FBRyxFQUFFQSxHQUFHO2NBQUVpQixTQUFTLEVBQUVEO1lBQUcsR0FDMUJqQixLQUFLLENBQUNvQixRQUFRLENBQ1g7VUFFVjtVQUFDIiwibmFtZXMiOlsiQmV5b25kU2Nyb2xsQ29udGFpbmVyIiwicHJvcHMiLCJyZWYiLCJjb250cm9sIiwiY3VycmVudCIsInNjcm9sbGJhciIsIlBlcmZlY3RTY3JvbGxiYXIiLCJ3aGVlbFNwZWVkIiwid2hlZWxQcm9wYWdhdGlvbiIsIm1pblNjcm9sbGJhckxlbmd0aCIsImhhbmRsZU9uU2Nyb2xsWSIsImV2ZW50Iiwib25TY3JvbGxZIiwiaGFuZGxlT25TY3JvbGxYIiwib25TY3JvbGxYIiwiYWRkRXZlbnRMaXN0ZW5lciIsImRlc3Ryb3kiLCJyZW1vdmVFdmVudExpc3RlbmVyIiwiY2xzIiwiY2xhc3NOYW1lIiwiUmVhY3QiLCJjaGlsZHJlbiJdLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXMiOlsiY29kZS90cy9jb250YWluZXIudHN4Il0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19

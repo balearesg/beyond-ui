@@ -37,11 +37,10 @@
 }
 .btn.btn-border {
   border: 1px solid var(--primary);
-  background-color: var(--gray-lighter);
-  color: var(--gray);
+  color: var(--text);
 }
 .btn.btn-border:hover:not(:disabled) {
-  background-color: var(--gray-lighter);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .btn.btn-cancel {
   background-color: var(--gray-variant);
@@ -381,6 +380,45 @@ body.body-beyond-modal-opened {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+.tooltip {
+  position: relative;
+  display: flex;
+}
+.tooltip:before, .tooltip:after {
+  --scale: 0;
+  --arrow-size: 6px;
+  --tooltip-color: #333;
+  position: absolute;
+  top: 3px;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+  left: 50%;
+  z-index: 10;
+}
+.tooltip:before {
+  --translate-y: calc(-100% - var(--arrow-size));
+  content: attr(data-tooltip);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background: var(--tooltip-color);
+  font-size: 11.5px;
+}
+.tooltip:hover:before, .tooltip:hover:after {
+  --scale: 1;
+}
+.tooltip:after {
+  --translate-y: calc(-1.2 * var(--arrow-size));
+  content: "";
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
 }
 .view {
   padding-bottom: 2rem;
